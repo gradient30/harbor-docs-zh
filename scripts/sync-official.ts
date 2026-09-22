@@ -257,14 +257,23 @@ for (const doc of snap.docs) {
   }
 }
 
+const prevTree = snap.docsTreeSha;
+const nextTree = treeData.sha ?? sha16([...live.values()].map((v) => v.sha).join("|"));
+const treeMoved = Boolean(nextTree && nextTree !== prevTree);
+
+if (changes.length === 0 && !treeMoved && snap.source === TREE_URL) {
+  console.log("no official drift", live.size, "pages");
+  process.exit(0);
+}
+
 snap.capturedAt = today();
 snap.officialRef = "main";
-snap.docsTreeSha = treeData.sha ?? sha16([...live.values()].map((v) => v.sha).join("|"));
+snap.docsTreeSha = nextTree;
 snap.source = TREE_URL;
 writeFileSync(MAP_PATH, JSON.stringify(snap, null, 2) + "\n");
 
 if (changes.length === 0) {
-  console.log("no official drift", live.size, "pages");
+  console.log("tree sha updated, no page drift", live.size, "pages");
   process.exit(0);
 }
 
