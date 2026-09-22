@@ -1,0 +1,167 @@
+# Custom sandboxes {#custom-sandboxes}
+
+> Integrate and run your own sandbox with Harbor.
+
+Custom sandboxes are provider integrations developed outside Harbor's
+[built-in registry](/docs/core-concepts/sandboxes/pre-integrated-sandboxes). They may
+be local work in progress or private integrations not intended for upstream.
+Implement `BaseEnvironment` to add one.
+
+## Run a custom sandbox {#run-a-custom-sandbox}
+
+Custom sandboxes are not registered by name, so pass `module.path:ClassName` to
+`--env` (`-e`). Harbor imports the custom sandbox on the host. Install its
+module and provider SDK in the same Python environment as Harbor. For a
+`MySandbox` class in `my_sandbox.py`, use `my_sandbox:MySandbox`.
+
+**CLI**
+
+```bash
+    export OPENAI_API_KEY="..."
+    harbor run \
+      -t hello-world/hello-world \
+      -a codex -m openai/gpt-5.6-sol \
+      -e my_sandbox:MySandbox
+    ```
+
+**Config**
+
+```json
+    {
+      "environment": {
+        "import_path": "my_sandbox:MySandbox"
+      },
+      "agents": [
+        {
+          "name": "codex",
+          "model_name": "openai/gpt-5.6-sol"
+        }
+      ],
+      "tasks": [
+        {
+          "name": "hello-world/hello-world"
+        }
+      ]
+    }
+    ```
+
+    ```bash
+    export OPENAI_API_KEY="..."
+    harbor run --config config.json
+    ```
+
+**Python**
+
+```python
+    import asyncio
+
+    from harbor.job import Job
+    from harbor.models.job.config import JobConfig
+    from harbor.models.trial.config import (
+        AgentConfig,
+        EnvironmentConfig,
+        TaskConfig,
+    )
+
+    async def main():
+        job = await Job.create(
+            JobConfig(
+                environment=EnvironmentConfig(
+                    import_path="my_sandbox:MySandbox",
+                ),
+                agents=[
+                    AgentConfig(
+                        name="codex",
+                        model_name="openai/gpt-5.6-sol",
+                    )
+                ],
+                tasks=[TaskConfig(name="hello-world/hello-world")],
+            )
+        )
+        await job.run()
+
+    asyncio.run(main())
+    ```
+
+Pass constructor options with `--environment-kwarg` (`--ek`) or
+`environment.kwargs`:
+
+```bash
+harbor run ... -e my_sandbox:MySandbox --ek region=us-west-2
+```
+
+## Implement a custom sandbox {#implement-a-custom-sandbox}
+
+Extend
+[`BaseEnvironment`](https://github.com/harbor-framework/harbor/blob/main/src/harbor/environments/base.py)
+and implement its lifecycle, command execution, and file-transfer methods.
+Use `_validate_definition()` to reject tasks missing required files, such as
+[`environment/Dockerfile`](/docs/core-concepts/tasks/environment). If no task files
+are required, it can be empty.
+
+### BaseEnvironment interface {#baseenvironment-interface}
+
+```python
+  from pathlib import Path
+
+  from harbor.environments.base import BaseEnvironment, ExecResult
+  from harbor.environments.capabilities import EnvironmentCapabilities
+
+  class MySandbox(BaseEnvironment):
+      @staticmethod
+      def type() -> str:
+          return "my-sandbox"
+
+      @property
+      def capabilities(self) -> EnvironmentCapabilities:
+          return EnvironmentCapabilities()
+
+      def _validate_definition(self) -> None:
+          # Validate the task's environment/ directory.
+          ...
+
+      async def start(self, force_build: bool) -> None:
+          # Build or create the sandbox, then prepare prebuilt-image tasks.
+          ...
+          await self._upload_environment_dir_after_start()
+
+      async def stop(self, delete: bool) -> None:
+          ...
+
+      async def exec(
+          self,
+          command: str,
+          cwd: str | None = None,
+          env: dict[str, str] | None = None,
+          timeout_sec: int | None = None,
+          user: str | int | None = None,
+      ) -> ExecResult:
+          env = self._merge_env(env)
+          user = self._resolve_user(user)
+          # Execute through the provider and return stdout, stderr, and return code.
+          ...
+
+      async def upload_file(self, source_path: Path | str, target_path: str) -> None:
+          ...
+
+      async def upload_dir(self, source_dir: Path | str, target_dir: str) -> None:
+          ...
+
+      async def download_file(self, source_path: str, target_path: Path | str) -> None:
+          ...
+
+      async def download_dir(self, source_dir: str, target_dir: Path | str) -> None:
+          ...
+  ```
+
+`_merge_env()` applies sandbox, agent-phase, and verifier-phase variables.
+`_resolve_user()` applies Harbor's default execution user. Use both in every
+`exec()` implementation.
+
+Declare only capabilities the provider enforces. If `docker_compose` is enabled,
+also implement the per-service execution and file-transfer methods used by
+[Compose tasks](/docs/core-concepts/tasks/multi-container).
+
+> **说明** Add `preflight()` to check provider credentials before trials are queued. Keep
+>   provider credentials in the Harbor process; see
+>   [Environment variables](/docs/core-concepts/jobs/environment-variables).

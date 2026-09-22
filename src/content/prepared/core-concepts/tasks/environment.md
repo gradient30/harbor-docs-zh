@@ -1,0 +1,105 @@
+# Environment {#environment}
+
+> The environment for a task.
+
+The `environment/` directory defines the environment the agent and verifier run in. Most often, this directory contains a `Dockerfile` or `docker-compose.yaml` file.
+
+## What is an environment in Harbor? {#what-is-an-environment-in-harbor}
+
+An environment in Harbor is a **`BaseEnvironment`** implementation, which defines the following methods: `exec`, `upload_file`, `upload_dir`, `download_file`, `download_dir`, `start`, `stop`.
+
+Typically, these are implemented for container runtimes like [Docker](https://www.docker.com/) or a cloud sandbox provider like [Daytona](https://www.daytona.io/) or [Modal](https://modal.com/).
+
+## Prebuilt Docker images {#prebuilt-docker-images}
+
+Users can prebuild a Docker image, host it on a container registry like Docker Hub or GitHub Packages, and reference it in the `task.toml` using `[environment].docker_image`. If present, most providers prefer the prebuilt image over building from the `environment/` directory due to speed and reproduciblity.
+
+> **说明** If `[environment].docker_image` is set in the `task.toml`, the `environment/` directory may be omitted entirely.
+
+## MCPs {#mcps}
+
+Harbor supports multi-container environments via `environment/docker-compose.yaml`. See [Multi-container](/docs/core-concepts/tasks/multi-container) for more details.
+
+MCPs are commonly used to mock external services like databases or APIs and can be implemented as services in the `docker-compose.yaml` file.
+
+Available MCP servers should be declared in the `task.toml` using `[[environment.mcp_servers]]` so [compatible agents](/docs/core-concepts/agents/pre-integrated-agents#agent-capabilities) (e.g. Claude Code, Codex) can register them automatically.
+
+```toml
+[[environment.mcp_servers]]
+name = "mcp-server"
+transport = "streamable-http"
+url = "http://mcp-server:8000/mcp"
+```
+
+## Skills {#skills}
+
+Skills can be bundled into the environment and exposed to [compatible agents](/docs/core-concepts/agents/pre-integrated-agents#agent-capabilities) using `[environment].skills_dir`.
+
+```toml
+[environment]
+skills_dir = "/app/skills"
+```
+
+See [Tasks → Skills](/docs/core-concepts/tasks/skills) for the required layout, image configuration, and how Harbor passes skills to agents.
+
+## Tools {#tools}
+
+Harbor considers tools to be a component of the agent, not the environment. If the environment does provide tools, it should do so in the form of MCPs, skills, APIs, or CLIs.
+
+In Harbor, agents can run inside or outside of the environment. If they run inside the environment, they can obviously use whichever tools they like. If they run outside the environment, their tools must be composed of the `BaseEnvironment` primitives defined above (which are close to sys-calls and therefore should be relatively unconstraining).
+
+## What about external services? {#what-about-external-services}
+
+External services like databases or APIs should either be mocked or used directly.
+
+For example, if the task involves interacting with Stripe, you can either mock a small component of Stripe as a service in the `environment/docker-compose.yaml` file or use the real Stripe API directly. This works best with products like Stripe, which already provide a sandbox/dev mode.
+
+We recommend sandboxing your external services instead of using them directly as much as possible because it increases controlability and reproducibility.
+
+If you do choose to interface with production services directly, consider using `[agent].allowed_hosts` to restrict the agent's network access to that specific endpoint.
+
+## What if my agent *and* environment are external services? {#what-if-my-agent-and-environment-are-external-services}
+
+It's not uncommon for production agents and environments to be tightly coupled products (e.g. a tool-calling agent tightly coupled to a product's APIs). In this case, you may be tempted to use the Harbor environment to ping your agent's API to perform the rollout and then ping your environment's API to verify the agent's output.
+
+If you find yourself doing this, Harbor may not be the right fit for your use case.
+
+Harbor shines when you want to evaluate coding/cowork agents that leverage code execution and a filesystem. That being said, we believe most agents are moving in this direction and we also believe all existing product companies should be evaluating how well coding agents can use their MCPs, APIs, and CLIs, or whether they can be used to power product features (e.g. extracting fields from a W2).
+
+## Special paths {#special-paths}
+
+Linux paths (Windows uses `C:` equivalents):
+
+| Path              | Description                                                                    |
+| ----------------- | ------------------------------------------------------------------------------ |
+| `/logs/verifier/` | Reward and verifier output                                                     |
+| `/logs/agent/`    | Optional agent logging                                                         |
+| `/solution/`      | Oracle copies [solution](/docs/core-concepts/tasks/solution) here                   |
+| `/tests/`         | Harness copies [tests](/docs/core-concepts/tasks/verifier) here for shared verifier |
+
+`/logs/` is synced to the host after the trial for debugging.
+
+## Resources {#resources}
+
+Resources are declared in the `[environment]` section of `task.toml`.
+
+```toml
+[environment]
+cpus = 2
+memory_mb = 4096
+storage_mb = 10240
+gpus = 1
+gpu_types = ["H100", "A100"]
+
+[environment.tpu]
+type = "v6e"
+topology = "2x4"
+```
+
+These fields are optional, and if omitted, Harbor will use the provider's default sizing.
+
+Harbor users can also choose how these resource declarations are applied by the provider using the `--cpus` and `--memory` flags. See [Resources](/docs/core-concepts/tasks/resources) for more details.
+
+## Operating system {#operating-system}
+
+`[environment].os` is `"linux"` (default) or `"windows"`. Check [Agent capabilities](/docs/core-concepts/agents/pre-integrated-agents#agent-capabilities) for Windows support.

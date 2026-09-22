@@ -1,0 +1,38 @@
+# Release policy {#release-policy}
+
+> Harbor's stable and nightly release policy.
+
+Harbor publishes stable releases as needed (usually biweekly) and nightly releases daily.
+
+## Stable releases {#stable-releases}
+
+Maintainers publish stable releases to [PyPI](https://pypi.org/project/harbor/)
+when ready. [Changelog](/docs/changelog) will be updated.
+
+* **Patch release:** fixes and incremental improvements, such as `0.22.0` to
+  `0.22.1`.
+* **Minor release:** used for a **major feature** or **breaking change**, such as
+  `0.22.x` to `0.23.0`.
+
+Install the latest stable release with:
+
+```bash
+uv tool install harbor
+```
+
+## Nightly releases {#nightly-releases}
+
+Nightly builds publish the latest `main` to PyPI each day. Their versions use
+the format `<next-patch>.dev<timestamp>`, such as
+[`0.22.1.dev202608271032`](https://pypi.org/project/harbor/0.22.1.dev202608271032/).
+See the [PyPI release history](https://pypi.org/project/harbor/#history) for all
+stable and nightly versions.
+
+Install the latest nightly build with:
+
+```bash
+uv tool install --prerelease explicit "harbor>=0.dev0"
+```
+
+> **说明** Nightly builds provide early access to unreleased changes and may be less
+>   stable.
