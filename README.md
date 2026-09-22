@@ -8,6 +8,7 @@
 - 英文源：[harbor-framework/harbor](https://github.com/harbor-framework/harbor) `docs-mintlify`
 - 本仓库：**非官方**译本与阅读器。命令、产品名、代码块与 `/docs/...` 路径与官网对齐
 - 发布：GitHub Pages（`main` 推送后自动构建；工作流 `.github/workflows/pages.yml`）
+- **第一次上线**（一次性）：打开 [Settings → Pages](https://github.com/gradient30/harbor-docs-zh/settings/pages)，Source 选 **GitHub Actions**，再在 [Actions](https://github.com/gradient30/harbor-docs-zh/actions) 里重新跑 `Deploy GitHub Pages`
 - 顶栏「同步」：每次官网对照后单独记一笔日志，写明改了什么、中文站在哪一页（[同步日志](src/content/zh/updates.md)）
 - 仓库每天 UTC 08:00 用 GitHub Actions 拉 `docs-mintlify` 的 blob SHA，有变动才回写同步日志并标出中文站路径
 - 风格：明 / 暗 / 彩，切换结果保存在浏览器本地
