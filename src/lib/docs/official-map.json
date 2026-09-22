@@ -2,7 +2,7 @@
   "capturedAt": "2026-09-22",
   "officialRef": "main",
   "docsTreeSha": "bac9a80d1d63a0265cf85e8fe18f1b752dad62d7",
-  "source": "https://docs.harborframework.com/llms.txt",
+  "source": "https://api.github.com/repos/harbor-framework/harbor/git/trees/main?recursive=1",
   "docs": [
     {
       "slug": "quick-guide",
