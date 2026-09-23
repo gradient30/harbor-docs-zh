@@ -20,6 +20,47 @@ export type UpdateLog = {
 
 export const UPDATE_LOGS: UpdateLog[] = [
   {
+    "id": "2026-09-23-597628",
+    "date": "2026-09-23",
+    "title": "官网对照：4 处变动",
+    "summary": "更新 /docs/core-concepts/agents/pre-integrated-agents；更新 /docs/core-concepts/jobs/simulate-a-user；更新 /docs/core-concepts/jobs/stream；更新 /docs/core-concepts/sandboxes/pre-integrated-sandboxes",
+    "sourceHint": "https://docs.harborframework.com/llms.txt · https://api.github.com/repos/harbor-framework/harbor/git/trees/main?recursive=1",
+    "changes": [
+      {
+        "kind": "updated",
+        "slug": "core-concepts/agents/pre-integrated-agents",
+        "title": "core-concepts/agents/pre-integrated-agents",
+        "webPath": "/docs/core-concepts/agents/pre-integrated-agents",
+        "officialUrl": "https://docs.harborframework.com/core-concepts/agents/pre-integrated-agents",
+        "detail": "GitHub blob 1fd2495 → 64331fe。中文站：/docs/core-concepts/agents/pre-integrated-agents。"
+      },
+      {
+        "kind": "updated",
+        "slug": "core-concepts/jobs/simulate-a-user",
+        "title": "core-concepts/jobs/simulate-a-user",
+        "webPath": "/docs/core-concepts/jobs/simulate-a-user",
+        "officialUrl": "https://docs.harborframework.com/core-concepts/jobs/simulate-a-user",
+        "detail": "GitHub blob 1d47bc3 → b274b1f。中文站：/docs/core-concepts/jobs/simulate-a-user。"
+      },
+      {
+        "kind": "updated",
+        "slug": "core-concepts/jobs/stream",
+        "title": "core-concepts/jobs/stream",
+        "webPath": "/docs/core-concepts/jobs/stream",
+        "officialUrl": "https://docs.harborframework.com/core-concepts/jobs/stream",
+        "detail": "GitHub blob 7eed59c → bde668c。中文站：/docs/core-concepts/jobs/stream。"
+      },
+      {
+        "kind": "updated",
+        "slug": "core-concepts/sandboxes/pre-integrated-sandboxes",
+        "title": "core-concepts/sandboxes/pre-integrated-sandboxes",
+        "webPath": "/docs/core-concepts/sandboxes/pre-integrated-sandboxes",
+        "officialUrl": "https://docs.harborframework.com/core-concepts/sandboxes/pre-integrated-sandboxes",
+        "detail": "GitHub blob 3121063 → b1c2189。中文站：/docs/core-concepts/sandboxes/pre-integrated-sandboxes。"
+      }
+    ]
+  },
+  {
     id: "2026-09-22-initial",
     date: "2026-09-22",
     title: "首版全站汉化上线",
