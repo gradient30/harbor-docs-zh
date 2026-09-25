@@ -1,7 +1,7 @@
 {
-  "capturedAt": "2026-09-24",
+  "capturedAt": "2026-09-25",
   "officialRef": "main",
-  "docsTreeSha": "cdb76bae6dc88d5bca1c8f0754bbba300d6574b4",
+  "docsTreeSha": "6cb9ff3167596c456e0b24622d473b59fc9ab6c7",
   "source": "https://api.github.com/repos/harbor-framework/harbor/git/trees/main?recursive=1",
   "docs": [
     {
@@ -185,8 +185,8 @@
       "section": "tasks",
       "kind": "official",
       "officialPath": "docs-mintlify/core-concepts/tasks/resources.mdx",
-      "size": 4860,
-      "lastSeenSha": "5b25ba8e85cee0af961d671f4d08998a5fb97f4c",
+      "size": 4869,
+      "lastSeenSha": "a85085b8392cdeb1c70060acde84d71326a12ed9",
       "translatedAtSha": "5b25ba8e85cee0af961d671f4d08998a5fb97f4c",
       "contentSha": "3a33c122ae414ea6",
       "webPath": "/docs/core-concepts/tasks/resources",

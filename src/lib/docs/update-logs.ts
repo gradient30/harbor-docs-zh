@@ -20,6 +20,23 @@ export type UpdateLog = {
 
 export const UPDATE_LOGS: UpdateLog[] = [
   {
+    "id": "2026-09-25-c6d954",
+    "date": "2026-09-25",
+    "title": "官网对照：1 处变动",
+    "summary": "更新 /docs/core-concepts/tasks/resources",
+    "sourceHint": "https://docs.harborframework.com/llms.txt · https://api.github.com/repos/harbor-framework/harbor/git/trees/main?recursive=1",
+    "changes": [
+      {
+        "kind": "updated",
+        "slug": "core-concepts/tasks/resources",
+        "title": "core-concepts/tasks/resources",
+        "webPath": "/docs/core-concepts/tasks/resources",
+        "officialUrl": "https://docs.harborframework.com/core-concepts/tasks/resources",
+        "detail": "GitHub blob 5b25ba8 → a85085b。中文站：/docs/core-concepts/tasks/resources。"
+      }
+    ]
+  },
+  {
     "id": "2026-09-23-597628",
     "date": "2026-09-23",
     "title": "官网对照：4 处变动",
