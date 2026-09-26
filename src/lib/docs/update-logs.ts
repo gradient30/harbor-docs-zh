@@ -20,6 +20,39 @@ export type UpdateLog = {
 
 export const UPDATE_LOGS: UpdateLog[] = [
   {
+    "id": "2026-09-26-40a46e",
+    "date": "2026-09-26",
+    "title": "官网对照：3 处变动",
+    "summary": "更新 /docs/core-concepts/sandboxes/pre-integrated-sandboxes；更新 /docs/core-concepts/tasks/network-policies；更新 /docs/core-concepts/tasks/resources",
+    "sourceHint": "https://docs.harborframework.com/llms.txt · https://api.github.com/repos/harbor-framework/harbor/git/trees/main?recursive=1",
+    "changes": [
+      {
+        "kind": "updated",
+        "slug": "core-concepts/sandboxes/pre-integrated-sandboxes",
+        "title": "core-concepts/sandboxes/pre-integrated-sandboxes",
+        "webPath": "/docs/core-concepts/sandboxes/pre-integrated-sandboxes",
+        "officialUrl": "https://docs.harborframework.com/core-concepts/sandboxes/pre-integrated-sandboxes",
+        "detail": "GitHub blob 3121063 → 97a14fb。中文站：/docs/core-concepts/sandboxes/pre-integrated-sandboxes。"
+      },
+      {
+        "kind": "updated",
+        "slug": "core-concepts/tasks/network-policies",
+        "title": "core-concepts/tasks/network-policies",
+        "webPath": "/docs/core-concepts/tasks/network-policies",
+        "officialUrl": "https://docs.harborframework.com/core-concepts/tasks/network-policies",
+        "detail": "GitHub blob 493319e → 8ab7d73。中文站：/docs/core-concepts/tasks/network-policies。"
+      },
+      {
+        "kind": "updated",
+        "slug": "core-concepts/tasks/resources",
+        "title": "core-concepts/tasks/resources",
+        "webPath": "/docs/core-concepts/tasks/resources",
+        "officialUrl": "https://docs.harborframework.com/core-concepts/tasks/resources",
+        "detail": "GitHub blob 5b25ba8 → c0b7dee。中文站：/docs/core-concepts/tasks/resources。"
+      }
+    ]
+  },
+  {
     "id": "2026-09-25-c6d954",
     "date": "2026-09-25",
     "title": "官网对照：1 处变动",
