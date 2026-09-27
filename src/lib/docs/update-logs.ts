@@ -20,6 +20,23 @@ export type UpdateLog = {
 
 export const UPDATE_LOGS: UpdateLog[] = [
   {
+    "id": "2026-09-27-b33eaf",
+    "date": "2026-09-27",
+    "title": "官网对照：1 处变动",
+    "summary": "更新 /docs/core-concepts/sandboxes/pre-integrated-sandboxes",
+    "sourceHint": "https://docs.harborframework.com/llms.txt · https://api.github.com/repos/harbor-framework/harbor/git/trees/main?recursive=1",
+    "changes": [
+      {
+        "kind": "updated",
+        "slug": "core-concepts/sandboxes/pre-integrated-sandboxes",
+        "title": "core-concepts/sandboxes/pre-integrated-sandboxes",
+        "webPath": "/docs/core-concepts/sandboxes/pre-integrated-sandboxes",
+        "officialUrl": "https://docs.harborframework.com/core-concepts/sandboxes/pre-integrated-sandboxes",
+        "detail": "GitHub blob 3121063 → e974e58。中文站：/docs/core-concepts/sandboxes/pre-integrated-sandboxes。"
+      }
+    ]
+  },
+  {
     "id": "2026-09-26-40a46e",
     "date": "2026-09-26",
     "title": "官网对照：3 处变动",

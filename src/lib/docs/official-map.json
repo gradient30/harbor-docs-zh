@@ -1,7 +1,7 @@
 {
-  "capturedAt": "2026-09-26",
+  "capturedAt": "2026-09-27",
   "officialRef": "main",
-  "docsTreeSha": "d10ac31727bc4428cf976e7a8a8e5328c9055928",
+  "docsTreeSha": "3c82380859d187957cfd5cd64802b076d9779550",
   "source": "https://api.github.com/repos/harbor-framework/harbor/git/trees/main?recursive=1",
   "docs": [
     {
@@ -485,8 +485,8 @@
       "section": "sandboxes",
       "kind": "official",
       "officialPath": "docs-mintlify/core-concepts/sandboxes/pre-integrated-sandboxes.mdx",
-      "size": 8686,
-      "lastSeenSha": "97a14fb6135fbe9308819dbc9f1c8caeea2ce658",
+      "size": 8791,
+      "lastSeenSha": "e974e58274de4a845b59a42a202f3b44a9bd4eeb",
       "translatedAtSha": "3121063cb4d5354a68ac3b87ee0cd9baba8968fa",
       "contentSha": "f92aa5744b388686",
       "webPath": "/docs/core-concepts/sandboxes/pre-integrated-sandboxes",
