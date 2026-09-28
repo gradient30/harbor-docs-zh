@@ -20,6 +20,66 @@ export type UpdateLog = {
 
 export const UPDATE_LOGS: UpdateLog[] = [
   {
+    id: "2026-09-28-9e4ef4",
+    date: "2026-09-28",
+    title: "官网对照：6 页已补译",
+    summary:
+      "预集成沙箱与网络策略加入 prime / mosaic；模拟用户的 ACP 桥接扩到 codex、opencode；Pi 写入 ATIF 与 MCP 能力表。",
+    sourceHint: "harbor-framework/harbor docs-mintlify · main",
+    changes: [
+      {
+        kind: "updated",
+        slug: "core-concepts/sandboxes/pre-integrated-sandboxes",
+        title: "预集成沙箱",
+        webPath: "/docs/core-concepts/sandboxes/pre-integrated-sandboxes",
+        officialUrl: "https://docs.harborframework.com/core-concepts/sandboxes/pre-integrated-sandboxes",
+        detail:
+          "新增 prime、mosaic。Compose / GPU / 网络 / CPU 能力表已补；SSH 流式传输加上 modal、tensorlake。Prime GPU 仅单容器。",
+      },
+      {
+        kind: "updated",
+        slug: "core-concepts/tasks/network-policies",
+        title: "网络策略",
+        webPath: "/docs/core-concepts/tasks/network-policies",
+        officialUrl: "https://docs.harborframework.com/core-concepts/tasks/network-policies",
+        detail:
+          "no-network、allowlist、阶段覆盖和功能对照表加入 prime。prime 的运行时策略只作用于新连接，已有连接保持打开。",
+      },
+      {
+        kind: "updated",
+        slug: "core-concepts/tasks/resources",
+        title: "资源",
+        webPath: "/docs/core-concepts/tasks/resources",
+        officialUrl: "https://docs.harborframework.com/core-concepts/tasks/resources",
+        detail: "CPU / 内存上限、存储规格、GPU 分配加入 prime；存储规格同时补上 runta。",
+      },
+      {
+        kind: "updated",
+        slug: "core-concepts/agents/pre-integrated-agents",
+        title: "预集成 Agent",
+        webPath: "/docs/core-concepts/agents/pre-integrated-agents",
+        officialUrl: "https://docs.harborframework.com/core-concepts/agents/pre-integrated-agents",
+        detail: "ATIF 与 MCP 能力名单加入 pi。Pi 会把当前会话分支转换成 ATIF。",
+      },
+      {
+        kind: "updated",
+        slug: "core-concepts/jobs/simulate-a-user",
+        title: "模拟用户",
+        webPath: "/docs/core-concepts/jobs/simulate-a-user",
+        officialUrl: "https://docs.harborframework.com/core-concepts/jobs/simulate-a-user",
+        detail: "ACP 桥接的目标 Agent 从 claude-code、gemini-cli 扩到 codex、opencode。",
+      },
+      {
+        kind: "updated",
+        slug: "core-concepts/jobs/stream",
+        title: "实时流",
+        webPath: "/docs/core-concepts/jobs/stream",
+        officialUrl: "https://docs.harborframework.com/core-concepts/jobs/stream",
+        detail: "`--no-delete` 现在写明也可用于调试，运行后仍须自行删除沙箱。",
+      },
+    ],
+  },
+  {
     "id": "2026-09-27-b33eaf",
     "date": "2026-09-27",
     "title": "官网对照：1 处变动",

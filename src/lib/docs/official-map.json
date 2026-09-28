@@ -1,7 +1,7 @@
 {
-  "capturedAt": "2026-09-27",
+  "capturedAt": "2026-09-28",
   "officialRef": "main",
-  "docsTreeSha": "3c82380859d187957cfd5cd64802b076d9779550",
+  "docsTreeSha": "a38eb549b5f3c33d16ccd5c51734b0defff8399e",
   "source": "https://api.github.com/repos/harbor-framework/harbor/git/trees/main?recursive=1",
   "docs": [
     {
@@ -187,7 +187,7 @@
       "officialPath": "docs-mintlify/core-concepts/tasks/resources.mdx",
       "size": 4896,
       "lastSeenSha": "c0b7dee35f50235b42728bd213a9129e4e32e7d8",
-      "translatedAtSha": "5b25ba8e85cee0af961d671f4d08998a5fb97f4c",
+      "translatedAtSha": "c0b7dee35f50235b42728bd213a9129e4e32e7d8",
       "contentSha": "3a33c122ae414ea6",
       "webPath": "/docs/core-concepts/tasks/resources",
       "officialUrl": "https://docs.harborframework.com/core-concepts/tasks/resources"
@@ -211,7 +211,7 @@
       "officialPath": "docs-mintlify/core-concepts/tasks/network-policies.mdx",
       "size": 14449,
       "lastSeenSha": "8ab7d73621f9bc8c49824a3b6940933144f56662",
-      "translatedAtSha": "493319e198456dd048f3b31b21472f851463f4c0",
+      "translatedAtSha": "8ab7d73621f9bc8c49824a3b6940933144f56662",
       "contentSha": "ef957b5a9c3347f0",
       "webPath": "/docs/core-concepts/tasks/network-policies",
       "officialUrl": "https://docs.harborframework.com/core-concepts/tasks/network-policies"
@@ -391,7 +391,7 @@
       "officialPath": "docs-mintlify/core-concepts/jobs/simulate-a-user.mdx",
       "size": 2779,
       "lastSeenSha": "b274b1f49716a48acbc97d95522e41b03bf5bb95",
-      "translatedAtSha": "1d47bc378005dd56683a15105689ce4cd74afe97",
+      "translatedAtSha": "b274b1f49716a48acbc97d95522e41b03bf5bb95",
       "contentSha": "d00428c92d68f574",
       "webPath": "/docs/core-concepts/jobs/simulate-a-user",
       "officialUrl": "https://docs.harborframework.com/core-concepts/jobs/simulate-a-user"
@@ -427,7 +427,7 @@
       "officialPath": "docs-mintlify/core-concepts/jobs/stream.mdx",
       "size": 1315,
       "lastSeenSha": "bde668c688ac71fed7a6e0aa9ea09d7de4de13fd",
-      "translatedAtSha": "7eed59ce6bce466d6bc402505b65dc163d2e7dd6",
+      "translatedAtSha": "bde668c688ac71fed7a6e0aa9ea09d7de4de13fd",
       "contentSha": "6c4c51c34e22cd99",
       "webPath": "/docs/core-concepts/jobs/stream",
       "officialUrl": "https://docs.harborframework.com/core-concepts/jobs/stream"
@@ -439,7 +439,7 @@
       "officialPath": "docs-mintlify/core-concepts/agents/pre-integrated-agents.mdx",
       "size": 6603,
       "lastSeenSha": "64331fe1ae27a9ed147bc9d8dfad00138f2f064c",
-      "translatedAtSha": "1fd249585e04104be49f66fe6cef4f7aa59b2d1f",
+      "translatedAtSha": "64331fe1ae27a9ed147bc9d8dfad00138f2f064c",
       "contentSha": "53301a3a9cbd7f82",
       "webPath": "/docs/core-concepts/agents/pre-integrated-agents",
       "officialUrl": "https://docs.harborframework.com/core-concepts/agents/pre-integrated-agents"
@@ -485,9 +485,9 @@
       "section": "sandboxes",
       "kind": "official",
       "officialPath": "docs-mintlify/core-concepts/sandboxes/pre-integrated-sandboxes.mdx",
-      "size": 8791,
-      "lastSeenSha": "e974e58274de4a845b59a42a202f3b44a9bd4eeb",
-      "translatedAtSha": "3121063cb4d5354a68ac3b87ee0cd9baba8968fa",
+      "size": 8845,
+      "lastSeenSha": "4bca2f306041de3edc11d8b535f1de28d6cf19e4",
+      "translatedAtSha": "4bca2f306041de3edc11d8b535f1de28d6cf19e4",
       "contentSha": "f92aa5744b388686",
       "webPath": "/docs/core-concepts/sandboxes/pre-integrated-sandboxes",
       "officialUrl": "https://docs.harborframework.com/core-concepts/sandboxes/pre-integrated-sandboxes"

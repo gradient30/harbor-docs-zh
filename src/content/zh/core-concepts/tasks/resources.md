@@ -93,11 +93,11 @@ Harbor 在作业开始时校验策略。不支持的组合会在试次运行前�
 
 | 能力                  | 环境                                                                                                                                                               |
 | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| CPU 和内存上限        | `apple-container`, `cwsandbox`, `docker`, `ec2`, `gke`, `modal`, `opensandbox`, `openshift`, `podman`, `skypilot`, `runta`                                         |
+| CPU 和内存上限        | `apple-container`, `cwsandbox`, `docker`, `ec2`, `gke`, `modal`, `opensandbox`, `openshift`, `podman`, `skypilot`, `runta`, `prime`                                |
 | CPU 预留              | `beam`, `cwsandbox`, `daytona`, `e2b`, `gke`, `hyperbrowser`, `islo`, `modal`, `novita`, `openshift`, `runloop`, `skypilot`, `tensorlake`, `vercel`, `runta`       |
 | 内存预留              | `beam`, `blaxel`, `cwsandbox`, `daytona`, `e2b`, `gke`, `hyperbrowser`, `islo`, `modal`, `novita`, `openshift`, `runloop`, `skypilot`, `tensorlake`, `vercel`, `runta` |
-| 存储规格              | `ack`, `daytona`, `gke`, `hyperbrowser`, `islo`, `langsmith`, `runloop`, `tensorlake`, `use-computer`                                                              |
-| GPU 分配              | `beam`, `daytona`, `gke`, `modal`, `opensandbox`                                                                                                                   |
+| 存储规格              | `ack`, `daytona`, `gke`, `hyperbrowser`, `islo`, `langsmith`, `runloop`, `runta`, `tensorlake`, `use-computer`, `prime`                                            |
+| GPU 分配              | `beam`, `daytona`, `gke`, `modal`, `opensandbox`, `prime`                                                                                                          |
 | TPU 分配              | `gke`                                                                                                                                                              |
 
 ## 校验 {#validation}

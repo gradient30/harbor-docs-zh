@@ -105,7 +105,9 @@ Harbor 会在可用时运行提供商预检。否则，缺失的设置会在提�
   [`skypilot`](https://skypilot.ai/)（早期访问）、
   [`tensorlake`](https://www.tensorlake.ai/)、
   [`use-computer`](https://use.computer/)、[`vercel`](https://vercel.com/sandbox)、
-  [`runta`](https://runta.com/docs/integrations/harbor/)
+  [`runta`](https://runta.com/docs/integrations/harbor/)、
+  [`prime`](https://github.com/PrimeIntellect-ai/prime/tree/main/packages/prime-sandboxes)、
+  [`mosaic`](https://sandbox.mosaicos.com/)
 
 ## 常用沙箱 CLI 选项 {#common-sandbox-cli-options}
 
@@ -130,27 +132,27 @@ Harbor 会在可用时运行提供商预检。否则，缺失的设置会在提�
 
 | 能力              | 支持的环境                                                                                                                           |
   | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
-  | Docker Compose    | `docker`, `podman`, `daytona`, `modal`, `ec2`, `gke`, `islo`, `langsmith`, `novita`, `blaxel`, `beam`, `hyperbrowser`, `vercel`, `runta` |
-  | GPU               | `daytona`, `modal`, `gke`, `beam`, `opensandbox`                                                                                         |
+  | Docker Compose    | `docker`, `podman`, `daytona`, `modal`, `ec2`, `gke`, `islo`, `langsmith`, `novita`, `blaxel`, `beam`, `hyperbrowser`, `vercel`, `runta`, `prime` |
+  | GPU               | `daytona`, `modal`, `gke`, `beam`, `opensandbox`, `prime`                                                                                |
   | TPU               | `gke`                                                                                                                                    |
   | Windows           | `docker`, `daytona`, `cua-cloud`, `use-computer`                                                                                         |
   | 宿主机挂载日志    | `docker`, `podman`, `apple-container`, `singularity`                                                                                     |
-  | 通过 SSH 流式传输 | `daytona`, `docker`                                                                                                                      |
+  | 通过 SSH 流式传输 | `daytona`, `docker`, `modal`, `tensorlake`                                                                                               |
 
-  Modal 的 GPU 支持取决于其运行时设置。GKE 仅对单容器任务暴露 GPU 和 TPU。`cua-cloud` 和 `use-computer` 需要其 Windows 平台设置。
+  Modal 的 GPU 支持取决于其运行时设置。GKE 仅对单容器任务暴露 GPU 和 TPU。Prime 的 GPU 同样只支持单容器。`cua-cloud` 和 `use-computer` 需要其 Windows 平台设置。
 
 ### 网络能力 {#network-capabilities}
 
 | 能力                   | 支持的环境                                                                                                                                                                                               |
   | ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-  | 禁用互联网             | `docker`, `podman`, `daytona`, `e2b`, `modal`, `runloop`, `langsmith`, `ec2`, `gke`, `novita`, `islo`, `tensorlake`, `cwsandbox`, `blaxel`, `opensandbox`, `beam`, `skypilot`, `hyperbrowser`, `vercel`, `runta` |
-  | 精确主机名             | `docker`, `podman`, `daytona`, `e2b`, `modal`, `runloop`, `langsmith`, `novita`, `islo`, `tensorlake`, `blaxel`, `beam`, `hyperbrowser`, `vercel`, `runta`                                                       |
-  | 通配符主机名           | `docker`, `podman`, `daytona`, `e2b`, `modal`, `runloop`, `langsmith`, `novita`, `blaxel`, `hyperbrowser`, `vercel`, `runta`                                                                                     |
-  | IPv4 地址              | `docker`, `podman`, `daytona`, `e2b`, `modal`, `novita`, `tensorlake`, `beam`, `hyperbrowser`                                                                                                                    |
+  | 禁用互联网             | `docker`, `podman`, `daytona`, `e2b`, `modal`, `runloop`, `langsmith`, `ec2`, `gke`, `novita`, `islo`, `tensorlake`, `cwsandbox`, `blaxel`, `opensandbox`, `beam`, `skypilot`, `hyperbrowser`, `vercel`, `runta`, `prime`, `mosaic` |
+  | 精确主机名             | `docker`, `podman`, `daytona`, `e2b`, `modal`, `runloop`, `langsmith`, `novita`, `islo`, `tensorlake`, `blaxel`, `beam`, `hyperbrowser`, `vercel`, `runta`, `prime`, `mosaic` |
+  | 通配符主机名           | `docker`, `podman`, `daytona`, `e2b`, `modal`, `runloop`, `langsmith`, `novita`, `blaxel`, `hyperbrowser`, `vercel`, `runta`, `prime` |
+  | IPv4 地址              | `docker`, `podman`, `daytona`, `e2b`, `modal`, `novita`, `tensorlake`, `beam`, `hyperbrowser`, `prime`, `mosaic` |
   | IPv6 地址              | `docker`, `podman`, `beam`                                                                                                                                                                                       |
-  | IPv4 CIDR              | `docker`, `podman`, `daytona`, `modal`, `novita`, `tensorlake`, `beam`, `hyperbrowser`                                                                                                                           |
+  | IPv4 CIDR              | `docker`, `podman`, `daytona`, `modal`, `novita`, `tensorlake`, `beam`, `hyperbrowser`, `prime`, `mosaic` |
   | IPv6 CIDR              | `docker`, `podman`, `beam`                                                                                                                                                                                       |
-  | 运行时策略变更         | `docker`, `podman`, `daytona`, `e2b`, `modal`, `novita`, `islo`, `beam`, `hyperbrowser`, `vercel`, `runta`                                                                                                       |
+  | 运行时策略变更         | `docker`, `podman`, `daytona`, `e2b`, `modal`, `novita`, `islo`, `beam`, `hyperbrowser`, `vercel`, `runta`, `prime` |
 
   Docker 和 Podman 需要 Harbor 的出站控制支持。Daytona、Modal、Novita、Blaxel 和 Vercel 的允许列表仅适用于单容器。GKE 仅能在 Compose 模式下禁用互联网。Islo 的运行时变更需要其默认网关配置。
 
@@ -158,10 +160,10 @@ Harbor 会在可用时运行提供商预检。否则，缺失的设置会在提�
 
 | 能力           | 支持的环境                                                                                                                                                 |
   | -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
-  | CPU 上限       | `docker`, `podman`, `apple-container`, `modal`, `gke`, `openshift`, `skypilot`, `cwsandbox`, `opensandbox`, `ec2`, `runta`                                 |
-  | CPU 请求       | `daytona`, `e2b`, `modal`, `runloop`, `gke`, `openshift`, `novita`, `islo`, `tensorlake`, `cwsandbox`, `beam`, `skypilot`, `hyperbrowser`, `vercel`, `runta` |
-  | 内存上限       | `docker`, `podman`, `apple-container`, `modal`, `gke`, `openshift`, `skypilot`, `cwsandbox`, `opensandbox`, `ec2`, `runta`                                 |
-  | 内存请求       | `daytona`, `e2b`, `modal`, `runloop`, `gke`, `openshift`, `novita`, `islo`, `tensorlake`, `cwsandbox`, `blaxel`, `beam`, `skypilot`, `hyperbrowser`, `vercel`, `runta` |
+  | CPU 上限       | `docker`, `podman`, `apple-container`, `modal`, `gke`, `openshift`, `skypilot`, `cwsandbox`, `opensandbox`, `ec2`, `runta`, `prime` |
+  | CPU 请求       | `daytona`, `e2b`, `modal`, `runloop`, `gke`, `openshift`, `novita`, `islo`, `tensorlake`, `cwsandbox`, `beam`, `skypilot`, `hyperbrowser`, `vercel`, `runta`, `mosaic` |
+  | 内存上限       | `docker`, `podman`, `apple-container`, `modal`, `gke`, `openshift`, `skypilot`, `cwsandbox`, `opensandbox`, `ec2`, `runta`, `prime` |
+  | 内存请求       | `daytona`, `e2b`, `modal`, `runloop`, `gke`, `openshift`, `novita`, `islo`, `tensorlake`, `cwsandbox`, `blaxel`, `beam`, `skypilot`, `hyperbrowser`, `vercel`, `runta`, `mosaic` |
 
   **上限（limit）** 是硬性封顶。**请求（request）** 用于预留或选择容量。`guarantee` 要求两者同时满足。当提供商声明了资源能力时，Harbor 会在试次开始前拒绝不受支持的策略。
 

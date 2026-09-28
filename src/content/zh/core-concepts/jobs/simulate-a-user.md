@@ -48,7 +48,7 @@ harbor run \
 并将用户 Agent 连接到目标。用户通过 `acpx prompt` 发送每条
 消息。
 
-ACP 桥接支持将 `claude-code` 和 `gemini-cli` 作为**目标 Agent**。其余
+ACP 桥接支持将 `claude-code`、`gemini-cli`、`codex` 和 `opencode` 作为**目标 Agent**。其余
 [ACP 注册表 Agent](https://agentclientprotocol.com/get-started/registry)
 尚未接入 Harbor。**用户 Agent** 可以是**任意** Harbor Agent。
 
