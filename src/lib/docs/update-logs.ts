@@ -20,6 +20,47 @@ export type UpdateLog = {
 
 export const UPDATE_LOGS: UpdateLog[] = [
   {
+    "id": "2026-09-30-3164fa",
+    "date": "2026-09-30",
+    "title": "官网对照：4 处变动",
+    "summary": "更新 /docs/core-concepts/jobs/stream；更新 /docs/core-concepts/rewardkit/judge-criteria；更新 /docs/core-concepts/rewardkit/quick-start；更新 /docs/core-concepts/sandboxes/pre-integrated-sandboxes",
+    "sourceHint": "https://docs.harborframework.com/llms.txt · https://api.github.com/repos/harbor-framework/harbor/git/trees/main?recursive=1",
+    "changes": [
+      {
+        "kind": "updated",
+        "slug": "core-concepts/jobs/stream",
+        "title": "core-concepts/jobs/stream",
+        "webPath": "/docs/core-concepts/jobs/stream",
+        "officialUrl": "https://docs.harborframework.com/core-concepts/jobs/stream",
+        "detail": "GitHub blob bde668c → f2d66f5。中文站：/docs/core-concepts/jobs/stream。"
+      },
+      {
+        "kind": "updated",
+        "slug": "core-concepts/rewardkit/judge-criteria",
+        "title": "core-concepts/rewardkit/judge-criteria",
+        "webPath": "/docs/core-concepts/rewardkit/judge-criteria",
+        "officialUrl": "https://docs.harborframework.com/core-concepts/rewardkit/judge-criteria",
+        "detail": "GitHub blob 2e3e72a → 1d44efd。中文站：/docs/core-concepts/rewardkit/judge-criteria。"
+      },
+      {
+        "kind": "updated",
+        "slug": "core-concepts/rewardkit/quick-start",
+        "title": "core-concepts/rewardkit/quick-start",
+        "webPath": "/docs/core-concepts/rewardkit/quick-start",
+        "officialUrl": "https://docs.harborframework.com/core-concepts/rewardkit/quick-start",
+        "detail": "GitHub blob 9e342b8 → 705bef0。中文站：/docs/core-concepts/rewardkit/quick-start。"
+      },
+      {
+        "kind": "updated",
+        "slug": "core-concepts/sandboxes/pre-integrated-sandboxes",
+        "title": "core-concepts/sandboxes/pre-integrated-sandboxes",
+        "webPath": "/docs/core-concepts/sandboxes/pre-integrated-sandboxes",
+        "officialUrl": "https://docs.harborframework.com/core-concepts/sandboxes/pre-integrated-sandboxes",
+        "detail": "GitHub blob 4bca2f3 → ea3d3cd。中文站：/docs/core-concepts/sandboxes/pre-integrated-sandboxes。"
+      }
+    ]
+  },
+  {
     id: "2026-09-28-9e4ef4",
     date: "2026-09-28",
     title: "官网对照：6 页已补译",
