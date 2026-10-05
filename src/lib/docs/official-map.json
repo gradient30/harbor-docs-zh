@@ -1,7 +1,7 @@
 {
-  "capturedAt": "2026-10-04",
+  "capturedAt": "2026-10-05",
   "officialRef": "main",
-  "docsTreeSha": "3e30cca047a4d0dc1fb209bf5a74ff761b794b90",
+  "docsTreeSha": "b53b8134e1241686dca7759af188f987ecc48e8b",
   "source": "https://api.github.com/repos/harbor-framework/harbor/git/trees/main?recursive=1",
   "docs": [
     {
@@ -1553,8 +1553,8 @@
       "section": "other",
       "kind": "official",
       "officialPath": "docs-mintlify/sandboxes/pre-integrated-sandboxes.mdx",
-      "size": 8906,
-      "lastSeenSha": "7c4baca221a3377bae34fab1c513148e4f98a9fe",
+      "size": 8916,
+      "lastSeenSha": "41dc36aa4fae562c56720a22eabe6c4a0083fac5",
       "translatedAtSha": null,
       "contentSha": null,
       "webPath": "/docs/sandboxes/pre-integrated-sandboxes",
@@ -1661,8 +1661,8 @@
       "section": "other",
       "kind": "official",
       "officialPath": "docs-mintlify/tasks/resources.mdx",
-      "size": 4882,
-      "lastSeenSha": "fe36f1b90617801012139897e05287a9ca4c8e42",
+      "size": 4892,
+      "lastSeenSha": "4f64fd74842e494b5a4c0b8459cdb712c635d40e",
       "translatedAtSha": null,
       "contentSha": null,
       "webPath": "/docs/tasks/resources",
