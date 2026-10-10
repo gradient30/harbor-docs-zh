@@ -1,7 +1,7 @@
 {
-  "capturedAt": "2026-10-09",
+  "capturedAt": "2026-10-10",
   "officialRef": "main",
-  "docsTreeSha": "d5ac1be17f575852eaf4fffc4072fd18481c209b",
+  "docsTreeSha": "09f5b964f8e5075f7e52fd08c9994dfc80ad5d24",
   "source": "https://api.github.com/repos/harbor-framework/harbor/git/trees/main?recursive=1",
   "docs": [
     {
@@ -1385,8 +1385,8 @@
       "section": "other",
       "kind": "official",
       "officialPath": "docs-mintlify/jobs/run-a-job.mdx",
-      "size": 4566,
-      "lastSeenSha": "1816ad1a4c9c33a3f97188be3972c8ae081308c9",
+      "size": 4646,
+      "lastSeenSha": "7244ed892dbd9e182ee83ca9e70589ccd320e0d0",
       "translatedAtSha": null,
       "contentSha": null,
       "webPath": "/docs/jobs/run-a-job",
@@ -1727,6 +1727,18 @@
       "contentSha": null,
       "webPath": "/docs/tasks/windows-tasks",
       "officialUrl": "https://docs.harborframework.com/tasks/windows-tasks"
+    },
+    {
+      "slug": "jobs/model-lookup",
+      "section": "other",
+      "kind": "official",
+      "officialPath": "docs-mintlify/jobs/model-lookup.mdx",
+      "size": 1187,
+      "lastSeenSha": "1c11f52c37a9435a522dc4b010aa830bc8850ab6",
+      "translatedAtSha": null,
+      "contentSha": null,
+      "webPath": "/docs/jobs/model-lookup",
+      "officialUrl": "https://docs.harborframework.com/jobs/model-lookup"
     }
   ],
   "releases": []

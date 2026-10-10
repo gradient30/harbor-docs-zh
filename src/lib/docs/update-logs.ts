@@ -20,6 +20,503 @@ export type UpdateLog = {
 
 export const UPDATE_LOGS: UpdateLog[] = [
   {
+    "id": "2026-10-10-a54c22",
+    "date": "2026-10-10",
+    "title": "官网对照：61 处变动",
+    "summary": "新增 /docs/jobs/model-lookup；移除 /docs/core-concepts/tasks/overview；移除 /docs/core-concepts/tasks/instruction；移除 /docs/core-concepts/tasks/configuration；移除 /docs/core-concepts/tasks/environment；移除 /docs/core-concepts/tasks/skills；移除 /docs/core-concepts/tasks/solution；移除 /docs/core-concepts/tasks/verifier",
+    "sourceHint": "https://docs.harborframework.com/llms.txt · https://api.github.com/repos/harbor-framework/harbor/git/trees/main?recursive=1",
+    "changes": [
+      {
+        "kind": "added",
+        "slug": "jobs/model-lookup",
+        "title": "model-lookup",
+        "webPath": "/docs/jobs/model-lookup",
+        "officialUrl": "https://docs.harborframework.com/jobs/model-lookup",
+        "detail": "官网新增页面（GitHub SHA 1c11f52）。中文站位置：/docs/jobs/model-lookup，已自动建档待补译。"
+      },
+      {
+        "kind": "removed",
+        "slug": "core-concepts/tasks/overview",
+        "title": "core-concepts/tasks/overview",
+        "webPath": "/docs/core-concepts/tasks/overview",
+        "officialUrl": "https://docs.harborframework.com/core-concepts/tasks/overview",
+        "detail": "GitHub docs-mintlify 已不再包含该页。中文站仍保留在 /docs/core-concepts/tasks/overview，请确认是否下线。"
+      },
+      {
+        "kind": "removed",
+        "slug": "core-concepts/tasks/instruction",
+        "title": "core-concepts/tasks/instruction",
+        "webPath": "/docs/core-concepts/tasks/instruction",
+        "officialUrl": "https://docs.harborframework.com/core-concepts/tasks/instruction",
+        "detail": "GitHub docs-mintlify 已不再包含该页。中文站仍保留在 /docs/core-concepts/tasks/instruction，请确认是否下线。"
+      },
+      {
+        "kind": "removed",
+        "slug": "core-concepts/tasks/configuration",
+        "title": "core-concepts/tasks/configuration",
+        "webPath": "/docs/core-concepts/tasks/configuration",
+        "officialUrl": "https://docs.harborframework.com/core-concepts/tasks/configuration",
+        "detail": "GitHub docs-mintlify 已不再包含该页。中文站仍保留在 /docs/core-concepts/tasks/configuration，请确认是否下线。"
+      },
+      {
+        "kind": "removed",
+        "slug": "core-concepts/tasks/environment",
+        "title": "core-concepts/tasks/environment",
+        "webPath": "/docs/core-concepts/tasks/environment",
+        "officialUrl": "https://docs.harborframework.com/core-concepts/tasks/environment",
+        "detail": "GitHub docs-mintlify 已不再包含该页。中文站仍保留在 /docs/core-concepts/tasks/environment，请确认是否下线。"
+      },
+      {
+        "kind": "removed",
+        "slug": "core-concepts/tasks/skills",
+        "title": "core-concepts/tasks/skills",
+        "webPath": "/docs/core-concepts/tasks/skills",
+        "officialUrl": "https://docs.harborframework.com/core-concepts/tasks/skills",
+        "detail": "GitHub docs-mintlify 已不再包含该页。中文站仍保留在 /docs/core-concepts/tasks/skills，请确认是否下线。"
+      },
+      {
+        "kind": "removed",
+        "slug": "core-concepts/tasks/solution",
+        "title": "core-concepts/tasks/solution",
+        "webPath": "/docs/core-concepts/tasks/solution",
+        "officialUrl": "https://docs.harborframework.com/core-concepts/tasks/solution",
+        "detail": "GitHub docs-mintlify 已不再包含该页。中文站仍保留在 /docs/core-concepts/tasks/solution，请确认是否下线。"
+      },
+      {
+        "kind": "removed",
+        "slug": "core-concepts/tasks/verifier",
+        "title": "core-concepts/tasks/verifier",
+        "webPath": "/docs/core-concepts/tasks/verifier",
+        "officialUrl": "https://docs.harborframework.com/core-concepts/tasks/verifier",
+        "detail": "GitHub docs-mintlify 已不再包含该页。中文站仍保留在 /docs/core-concepts/tasks/verifier，请确认是否下线。"
+      },
+      {
+        "kind": "removed",
+        "slug": "core-concepts/tasks/artifacts",
+        "title": "core-concepts/tasks/artifacts",
+        "webPath": "/docs/core-concepts/tasks/artifacts",
+        "officialUrl": "https://docs.harborframework.com/core-concepts/tasks/artifacts",
+        "detail": "GitHub docs-mintlify 已不再包含该页。中文站仍保留在 /docs/core-concepts/tasks/artifacts，请确认是否下线。"
+      },
+      {
+        "kind": "removed",
+        "slug": "core-concepts/tasks/resources",
+        "title": "core-concepts/tasks/resources",
+        "webPath": "/docs/core-concepts/tasks/resources",
+        "officialUrl": "https://docs.harborframework.com/core-concepts/tasks/resources",
+        "detail": "GitHub docs-mintlify 已不再包含该页。中文站仍保留在 /docs/core-concepts/tasks/resources，请确认是否下线。"
+      },
+      {
+        "kind": "removed",
+        "slug": "core-concepts/tasks/multi-container",
+        "title": "core-concepts/tasks/multi-container",
+        "webPath": "/docs/core-concepts/tasks/multi-container",
+        "officialUrl": "https://docs.harborframework.com/core-concepts/tasks/multi-container",
+        "detail": "GitHub docs-mintlify 已不再包含该页。中文站仍保留在 /docs/core-concepts/tasks/multi-container，请确认是否下线。"
+      },
+      {
+        "kind": "removed",
+        "slug": "core-concepts/tasks/network-policies",
+        "title": "core-concepts/tasks/network-policies",
+        "webPath": "/docs/core-concepts/tasks/network-policies",
+        "officialUrl": "https://docs.harborframework.com/core-concepts/tasks/network-policies",
+        "detail": "GitHub docs-mintlify 已不再包含该页。中文站仍保留在 /docs/core-concepts/tasks/network-policies，请确认是否下线。"
+      },
+      {
+        "kind": "removed",
+        "slug": "core-concepts/tasks/multi-step",
+        "title": "core-concepts/tasks/multi-step",
+        "webPath": "/docs/core-concepts/tasks/multi-step",
+        "officialUrl": "https://docs.harborframework.com/core-concepts/tasks/multi-step",
+        "detail": "GitHub docs-mintlify 已不再包含该页。中文站仍保留在 /docs/core-concepts/tasks/multi-step，请确认是否下线。"
+      },
+      {
+        "kind": "removed",
+        "slug": "core-concepts/tasks/separate-verifier",
+        "title": "core-concepts/tasks/separate-verifier",
+        "webPath": "/docs/core-concepts/tasks/separate-verifier",
+        "officialUrl": "https://docs.harborframework.com/core-concepts/tasks/separate-verifier",
+        "detail": "GitHub docs-mintlify 已不再包含该页。中文站仍保留在 /docs/core-concepts/tasks/separate-verifier，请确认是否下线。"
+      },
+      {
+        "kind": "removed",
+        "slug": "core-concepts/datasets/datasets",
+        "title": "core-concepts/datasets/datasets",
+        "webPath": "/docs/core-concepts/datasets/datasets",
+        "officialUrl": "https://docs.harborframework.com/core-concepts/datasets/datasets",
+        "detail": "GitHub docs-mintlify 已不再包含该页。中文站仍保留在 /docs/core-concepts/datasets/datasets，请确认是否下线。"
+      },
+      {
+        "kind": "removed",
+        "slug": "core-concepts/datasets/create-a-dataset",
+        "title": "core-concepts/datasets/create-a-dataset",
+        "webPath": "/docs/core-concepts/datasets/create-a-dataset",
+        "officialUrl": "https://docs.harborframework.com/core-concepts/datasets/create-a-dataset",
+        "detail": "GitHub docs-mintlify 已不再包含该页。中文站仍保留在 /docs/core-concepts/datasets/create-a-dataset，请确认是否下线。"
+      },
+      {
+        "kind": "removed",
+        "slug": "core-concepts/datasets/git-repos",
+        "title": "core-concepts/datasets/git-repos",
+        "webPath": "/docs/core-concepts/datasets/git-repos",
+        "officialUrl": "https://docs.harborframework.com/core-concepts/datasets/git-repos",
+        "detail": "GitHub docs-mintlify 已不再包含该页。中文站仍保留在 /docs/core-concepts/datasets/git-repos，请确认是否下线。"
+      },
+      {
+        "kind": "removed",
+        "slug": "core-concepts/datasets/registries",
+        "title": "core-concepts/datasets/registries",
+        "webPath": "/docs/core-concepts/datasets/registries",
+        "officialUrl": "https://docs.harborframework.com/core-concepts/datasets/registries",
+        "detail": "GitHub docs-mintlify 已不再包含该页。中文站仍保留在 /docs/core-concepts/datasets/registries，请确认是否下线。"
+      },
+      {
+        "kind": "removed",
+        "slug": "core-concepts/datasets/metrics",
+        "title": "core-concepts/datasets/metrics",
+        "webPath": "/docs/core-concepts/datasets/metrics",
+        "officialUrl": "https://docs.harborframework.com/core-concepts/datasets/metrics",
+        "detail": "GitHub docs-mintlify 已不再包含该页。中文站仍保留在 /docs/core-concepts/datasets/metrics，请确认是否下线。"
+      },
+      {
+        "kind": "removed",
+        "slug": "core-concepts/jobs/run-a-job",
+        "title": "core-concepts/jobs/run-a-job",
+        "webPath": "/docs/core-concepts/jobs/run-a-job",
+        "officialUrl": "https://docs.harborframework.com/core-concepts/jobs/run-a-job",
+        "detail": "GitHub docs-mintlify 已不再包含该页。中文站仍保留在 /docs/core-concepts/jobs/run-a-job，请确认是否下线。"
+      },
+      {
+        "kind": "removed",
+        "slug": "core-concepts/jobs/configs",
+        "title": "core-concepts/jobs/configs",
+        "webPath": "/docs/core-concepts/jobs/configs",
+        "officialUrl": "https://docs.harborframework.com/core-concepts/jobs/configs",
+        "detail": "GitHub docs-mintlify 已不再包含该页。中文站仍保留在 /docs/core-concepts/jobs/configs，请确认是否下线。"
+      },
+      {
+        "kind": "removed",
+        "slug": "core-concepts/jobs/environment-variables",
+        "title": "core-concepts/jobs/environment-variables",
+        "webPath": "/docs/core-concepts/jobs/environment-variables",
+        "officialUrl": "https://docs.harborframework.com/core-concepts/jobs/environment-variables",
+        "detail": "GitHub docs-mintlify 已不再包含该页。中文站仍保留在 /docs/core-concepts/jobs/environment-variables，请确认是否下线。"
+      },
+      {
+        "kind": "removed",
+        "slug": "core-concepts/jobs/skills",
+        "title": "core-concepts/jobs/skills",
+        "webPath": "/docs/core-concepts/jobs/skills",
+        "officialUrl": "https://docs.harborframework.com/core-concepts/jobs/skills",
+        "detail": "GitHub docs-mintlify 已不再包含该页。中文站仍保留在 /docs/core-concepts/jobs/skills，请确认是否下线。"
+      },
+      {
+        "kind": "removed",
+        "slug": "core-concepts/jobs/loading-trajectories",
+        "title": "core-concepts/jobs/loading-trajectories",
+        "webPath": "/docs/core-concepts/jobs/loading-trajectories",
+        "officialUrl": "https://docs.harborframework.com/core-concepts/jobs/loading-trajectories",
+        "detail": "GitHub docs-mintlify 已不再包含该页。中文站仍保留在 /docs/core-concepts/jobs/loading-trajectories，请确认是否下线。"
+      },
+      {
+        "kind": "removed",
+        "slug": "core-concepts/jobs/handoff",
+        "title": "core-concepts/jobs/handoff",
+        "webPath": "/docs/core-concepts/jobs/handoff",
+        "officialUrl": "https://docs.harborframework.com/core-concepts/jobs/handoff",
+        "detail": "GitHub docs-mintlify 已不再包含该页。中文站仍保留在 /docs/core-concepts/jobs/handoff，请确认是否下线。"
+      },
+      {
+        "kind": "removed",
+        "slug": "core-concepts/jobs/regrade",
+        "title": "core-concepts/jobs/regrade",
+        "webPath": "/docs/core-concepts/jobs/regrade",
+        "officialUrl": "https://docs.harborframework.com/core-concepts/jobs/regrade",
+        "detail": "GitHub docs-mintlify 已不再包含该页。中文站仍保留在 /docs/core-concepts/jobs/regrade，请确认是否下线。"
+      },
+      {
+        "kind": "removed",
+        "slug": "core-concepts/jobs/simulate-a-user",
+        "title": "core-concepts/jobs/simulate-a-user",
+        "webPath": "/docs/core-concepts/jobs/simulate-a-user",
+        "officialUrl": "https://docs.harborframework.com/core-concepts/jobs/simulate-a-user",
+        "detail": "GitHub docs-mintlify 已不再包含该页。中文站仍保留在 /docs/core-concepts/jobs/simulate-a-user，请确认是否下线。"
+      },
+      {
+        "kind": "removed",
+        "slug": "core-concepts/jobs/custom-verifiers",
+        "title": "core-concepts/jobs/custom-verifiers",
+        "webPath": "/docs/core-concepts/jobs/custom-verifiers",
+        "officialUrl": "https://docs.harborframework.com/core-concepts/jobs/custom-verifiers",
+        "detail": "GitHub docs-mintlify 已不再包含该页。中文站仍保留在 /docs/core-concepts/jobs/custom-verifiers，请确认是否下线。"
+      },
+      {
+        "kind": "removed",
+        "slug": "core-concepts/jobs/artifact-collection",
+        "title": "core-concepts/jobs/artifact-collection",
+        "webPath": "/docs/core-concepts/jobs/artifact-collection",
+        "officialUrl": "https://docs.harborframework.com/core-concepts/jobs/artifact-collection",
+        "detail": "GitHub docs-mintlify 已不再包含该页。中文站仍保留在 /docs/core-concepts/jobs/artifact-collection，请确认是否下线。"
+      },
+      {
+        "kind": "removed",
+        "slug": "core-concepts/jobs/stream",
+        "title": "core-concepts/jobs/stream",
+        "webPath": "/docs/core-concepts/jobs/stream",
+        "officialUrl": "https://docs.harborframework.com/core-concepts/jobs/stream",
+        "detail": "GitHub docs-mintlify 已不再包含该页。中文站仍保留在 /docs/core-concepts/jobs/stream，请确认是否下线。"
+      },
+      {
+        "kind": "removed",
+        "slug": "core-concepts/agents/pre-integrated-agents",
+        "title": "core-concepts/agents/pre-integrated-agents",
+        "webPath": "/docs/core-concepts/agents/pre-integrated-agents",
+        "officialUrl": "https://docs.harborframework.com/core-concepts/agents/pre-integrated-agents",
+        "detail": "GitHub docs-mintlify 已不再包含该页。中文站仍保留在 /docs/core-concepts/agents/pre-integrated-agents，请确认是否下线。"
+      },
+      {
+        "kind": "removed",
+        "slug": "core-concepts/agents/acp",
+        "title": "core-concepts/agents/acp",
+        "webPath": "/docs/core-concepts/agents/acp",
+        "officialUrl": "https://docs.harborframework.com/core-concepts/agents/acp",
+        "detail": "GitHub docs-mintlify 已不再包含该页。中文站仍保留在 /docs/core-concepts/agents/acp，请确认是否下线。"
+      },
+      {
+        "kind": "removed",
+        "slug": "core-concepts/agents/custom-agents",
+        "title": "core-concepts/agents/custom-agents",
+        "webPath": "/docs/core-concepts/agents/custom-agents",
+        "officialUrl": "https://docs.harborframework.com/core-concepts/agents/custom-agents",
+        "detail": "GitHub docs-mintlify 已不再包含该页。中文站仍保留在 /docs/core-concepts/agents/custom-agents，请确认是否下线。"
+      },
+      {
+        "kind": "removed",
+        "slug": "core-concepts/agents/atif",
+        "title": "core-concepts/agents/atif",
+        "webPath": "/docs/core-concepts/agents/atif",
+        "officialUrl": "https://docs.harborframework.com/core-concepts/agents/atif",
+        "detail": "GitHub docs-mintlify 已不再包含该页。中文站仍保留在 /docs/core-concepts/agents/atif，请确认是否下线。"
+      },
+      {
+        "kind": "removed",
+        "slug": "core-concepts/sandboxes/pre-integrated-sandboxes",
+        "title": "core-concepts/sandboxes/pre-integrated-sandboxes",
+        "webPath": "/docs/core-concepts/sandboxes/pre-integrated-sandboxes",
+        "officialUrl": "https://docs.harborframework.com/core-concepts/sandboxes/pre-integrated-sandboxes",
+        "detail": "GitHub docs-mintlify 已不再包含该页。中文站仍保留在 /docs/core-concepts/sandboxes/pre-integrated-sandboxes，请确认是否下线。"
+      },
+      {
+        "kind": "removed",
+        "slug": "core-concepts/sandboxes/asp",
+        "title": "core-concepts/sandboxes/asp",
+        "webPath": "/docs/core-concepts/sandboxes/asp",
+        "officialUrl": "https://docs.harborframework.com/core-concepts/sandboxes/asp",
+        "detail": "GitHub docs-mintlify 已不再包含该页。中文站仍保留在 /docs/core-concepts/sandboxes/asp，请确认是否下线。"
+      },
+      {
+        "kind": "removed",
+        "slug": "core-concepts/sandboxes/custom-sandboxes",
+        "title": "core-concepts/sandboxes/custom-sandboxes",
+        "webPath": "/docs/core-concepts/sandboxes/custom-sandboxes",
+        "officialUrl": "https://docs.harborframework.com/core-concepts/sandboxes/custom-sandboxes",
+        "detail": "GitHub docs-mintlify 已不再包含该页。中文站仍保留在 /docs/core-concepts/sandboxes/custom-sandboxes，请确认是否下线。"
+      },
+      {
+        "kind": "removed",
+        "slug": "core-concepts/plugins/existing-plugins",
+        "title": "core-concepts/plugins/existing-plugins",
+        "webPath": "/docs/core-concepts/plugins/existing-plugins",
+        "officialUrl": "https://docs.harborframework.com/core-concepts/plugins/existing-plugins",
+        "detail": "GitHub docs-mintlify 已不再包含该页。中文站仍保留在 /docs/core-concepts/plugins/existing-plugins，请确认是否下线。"
+      },
+      {
+        "kind": "removed",
+        "slug": "core-concepts/plugins/custom-plugins",
+        "title": "core-concepts/plugins/custom-plugins",
+        "webPath": "/docs/core-concepts/plugins/custom-plugins",
+        "officialUrl": "https://docs.harborframework.com/core-concepts/plugins/custom-plugins",
+        "detail": "GitHub docs-mintlify 已不再包含该页。中文站仍保留在 /docs/core-concepts/plugins/custom-plugins，请确认是否下线。"
+      },
+      {
+        "kind": "removed",
+        "slug": "core-concepts/results/view-job-results",
+        "title": "core-concepts/results/view-job-results",
+        "webPath": "/docs/core-concepts/results/view-job-results",
+        "officialUrl": "https://docs.harborframework.com/core-concepts/results/view-job-results",
+        "detail": "GitHub docs-mintlify 已不再包含该页。中文站仍保留在 /docs/core-concepts/results/view-job-results，请确认是否下线。"
+      },
+      {
+        "kind": "removed",
+        "slug": "core-concepts/results/handoff",
+        "title": "core-concepts/results/handoff",
+        "webPath": "/docs/core-concepts/results/handoff",
+        "officialUrl": "https://docs.harborframework.com/core-concepts/results/handoff",
+        "detail": "GitHub docs-mintlify 已不再包含该页。中文站仍保留在 /docs/core-concepts/results/handoff，请确认是否下线。"
+      },
+      {
+        "kind": "removed",
+        "slug": "core-concepts/harbor-hub/publish",
+        "title": "core-concepts/harbor-hub/publish",
+        "webPath": "/docs/core-concepts/harbor-hub/publish",
+        "officialUrl": "https://docs.harborframework.com/core-concepts/harbor-hub/publish",
+        "detail": "GitHub docs-mintlify 已不再包含该页。中文站仍保留在 /docs/core-concepts/harbor-hub/publish，请确认是否下线。"
+      },
+      {
+        "kind": "removed",
+        "slug": "core-concepts/harbor-hub/upload",
+        "title": "core-concepts/harbor-hub/upload",
+        "webPath": "/docs/core-concepts/harbor-hub/upload",
+        "officialUrl": "https://docs.harborframework.com/core-concepts/harbor-hub/upload",
+        "detail": "GitHub docs-mintlify 已不再包含该页。中文站仍保留在 /docs/core-concepts/harbor-hub/upload，请确认是否下线。"
+      },
+      {
+        "kind": "removed",
+        "slug": "core-concepts/harbor-hub/download",
+        "title": "core-concepts/harbor-hub/download",
+        "webPath": "/docs/core-concepts/harbor-hub/download",
+        "officialUrl": "https://docs.harborframework.com/core-concepts/harbor-hub/download",
+        "detail": "GitHub docs-mintlify 已不再包含该页。中文站仍保留在 /docs/core-concepts/harbor-hub/download，请确认是否下线。"
+      },
+      {
+        "kind": "removed",
+        "slug": "core-concepts/harbor-hub/hosted-jobs",
+        "title": "core-concepts/harbor-hub/hosted-jobs",
+        "webPath": "/docs/core-concepts/harbor-hub/hosted-jobs",
+        "officialUrl": "https://docs.harborframework.com/core-concepts/harbor-hub/hosted-jobs",
+        "detail": "GitHub docs-mintlify 已不再包含该页。中文站仍保留在 /docs/core-concepts/harbor-hub/hosted-jobs，请确认是否下线。"
+      },
+      {
+        "kind": "removed",
+        "slug": "core-concepts/harbor-hub/leaderboards",
+        "title": "core-concepts/harbor-hub/leaderboards",
+        "webPath": "/docs/core-concepts/harbor-hub/leaderboards",
+        "officialUrl": "https://docs.harborframework.com/core-concepts/harbor-hub/leaderboards",
+        "detail": "GitHub docs-mintlify 已不再包含该页。中文站仍保留在 /docs/core-concepts/harbor-hub/leaderboards，请确认是否下线。"
+      },
+      {
+        "kind": "removed",
+        "slug": "core-concepts/harbor-hub/sharing",
+        "title": "core-concepts/harbor-hub/sharing",
+        "webPath": "/docs/core-concepts/harbor-hub/sharing",
+        "officialUrl": "https://docs.harborframework.com/core-concepts/harbor-hub/sharing",
+        "detail": "GitHub docs-mintlify 已不再包含该页。中文站仍保留在 /docs/core-concepts/harbor-hub/sharing，请确认是否下线。"
+      },
+      {
+        "kind": "removed",
+        "slug": "core-concepts/hosted-harbor/index",
+        "title": "core-concepts/hosted-harbor/index",
+        "webPath": "/docs/core-concepts/hosted-harbor/index",
+        "officialUrl": "https://docs.harborframework.com/core-concepts/hosted-harbor/index",
+        "detail": "GitHub docs-mintlify 已不再包含该页。中文站仍保留在 /docs/core-concepts/hosted-harbor/index，请确认是否下线。"
+      },
+      {
+        "kind": "removed",
+        "slug": "core-concepts/hosted-harbor/api-key",
+        "title": "core-concepts/hosted-harbor/api-key",
+        "webPath": "/docs/core-concepts/hosted-harbor/api-key",
+        "officialUrl": "https://docs.harborframework.com/core-concepts/hosted-harbor/api-key",
+        "detail": "GitHub docs-mintlify 已不再包含该页。中文站仍保留在 /docs/core-concepts/hosted-harbor/api-key，请确认是否下线。"
+      },
+      {
+        "kind": "removed",
+        "slug": "core-concepts/hosted-harbor/web-ui",
+        "title": "core-concepts/hosted-harbor/web-ui",
+        "webPath": "/docs/core-concepts/hosted-harbor/web-ui",
+        "officialUrl": "https://docs.harborframework.com/core-concepts/hosted-harbor/web-ui",
+        "detail": "GitHub docs-mintlify 已不再包含该页。中文站仍保留在 /docs/core-concepts/hosted-harbor/web-ui，请确认是否下线。"
+      },
+      {
+        "kind": "removed",
+        "slug": "core-concepts/hosted-harbor/cli",
+        "title": "core-concepts/hosted-harbor/cli",
+        "webPath": "/docs/core-concepts/hosted-harbor/cli",
+        "officialUrl": "https://docs.harborframework.com/core-concepts/hosted-harbor/cli",
+        "detail": "GitHub docs-mintlify 已不再包含该页。中文站仍保留在 /docs/core-concepts/hosted-harbor/cli，请确认是否下线。"
+      },
+      {
+        "kind": "removed",
+        "slug": "core-concepts/hosted-harbor/api",
+        "title": "core-concepts/hosted-harbor/api",
+        "webPath": "/docs/core-concepts/hosted-harbor/api",
+        "officialUrl": "https://docs.harborframework.com/core-concepts/hosted-harbor/api",
+        "detail": "GitHub docs-mintlify 已不再包含该页。中文站仍保留在 /docs/core-concepts/hosted-harbor/api，请确认是否下线。"
+      },
+      {
+        "kind": "removed",
+        "slug": "core-concepts/hosted-harbor/submitting-jobs",
+        "title": "core-concepts/hosted-harbor/submitting-jobs",
+        "webPath": "/docs/core-concepts/hosted-harbor/submitting-jobs",
+        "officialUrl": "https://docs.harborframework.com/core-concepts/hosted-harbor/submitting-jobs",
+        "detail": "GitHub docs-mintlify 已不再包含该页。中文站仍保留在 /docs/core-concepts/hosted-harbor/submitting-jobs，请确认是否下线。"
+      },
+      {
+        "kind": "removed",
+        "slug": "core-concepts/hosted-harbor/custom-agents",
+        "title": "core-concepts/hosted-harbor/custom-agents",
+        "webPath": "/docs/core-concepts/hosted-harbor/custom-agents",
+        "officialUrl": "https://docs.harborframework.com/core-concepts/hosted-harbor/custom-agents",
+        "detail": "GitHub docs-mintlify 已不再包含该页。中文站仍保留在 /docs/core-concepts/hosted-harbor/custom-agents，请确认是否下线。"
+      },
+      {
+        "kind": "removed",
+        "slug": "core-concepts/hosted-harbor/secrets",
+        "title": "core-concepts/hosted-harbor/secrets",
+        "webPath": "/docs/core-concepts/hosted-harbor/secrets",
+        "officialUrl": "https://docs.harborframework.com/core-concepts/hosted-harbor/secrets",
+        "detail": "GitHub docs-mintlify 已不再包含该页。中文站仍保留在 /docs/core-concepts/hosted-harbor/secrets，请确认是否下线。"
+      },
+      {
+        "kind": "removed",
+        "slug": "core-concepts/hosted-harbor/registry-credentials",
+        "title": "core-concepts/hosted-harbor/registry-credentials",
+        "webPath": "/docs/core-concepts/hosted-harbor/registry-credentials",
+        "officialUrl": "https://docs.harborframework.com/core-concepts/hosted-harbor/registry-credentials",
+        "detail": "GitHub docs-mintlify 已不再包含该页。中文站仍保留在 /docs/core-concepts/hosted-harbor/registry-credentials，请确认是否下线。"
+      },
+      {
+        "kind": "removed",
+        "slug": "core-concepts/rewardkit/quick-start",
+        "title": "core-concepts/rewardkit/quick-start",
+        "webPath": "/docs/core-concepts/rewardkit/quick-start",
+        "officialUrl": "https://docs.harborframework.com/core-concepts/rewardkit/quick-start",
+        "detail": "GitHub docs-mintlify 已不再包含该页。中文站仍保留在 /docs/core-concepts/rewardkit/quick-start，请确认是否下线。"
+      },
+      {
+        "kind": "removed",
+        "slug": "core-concepts/rewardkit/judge-criteria",
+        "title": "core-concepts/rewardkit/judge-criteria",
+        "webPath": "/docs/core-concepts/rewardkit/judge-criteria",
+        "officialUrl": "https://docs.harborframework.com/core-concepts/rewardkit/judge-criteria",
+        "detail": "GitHub docs-mintlify 已不再包含该页。中文站仍保留在 /docs/core-concepts/rewardkit/judge-criteria，请确认是否下线。"
+      },
+      {
+        "kind": "removed",
+        "slug": "core-concepts/rewardkit/built-in-criteria",
+        "title": "core-concepts/rewardkit/built-in-criteria",
+        "webPath": "/docs/core-concepts/rewardkit/built-in-criteria",
+        "officialUrl": "https://docs.harborframework.com/core-concepts/rewardkit/built-in-criteria",
+        "detail": "GitHub docs-mintlify 已不再包含该页。中文站仍保留在 /docs/core-concepts/rewardkit/built-in-criteria，请确认是否下线。"
+      },
+      {
+        "kind": "removed",
+        "slug": "core-concepts/rewardkit/motivation-and-design",
+        "title": "core-concepts/rewardkit/motivation-and-design",
+        "webPath": "/docs/core-concepts/rewardkit/motivation-and-design",
+        "officialUrl": "https://docs.harborframework.com/core-concepts/rewardkit/motivation-and-design",
+        "detail": "GitHub docs-mintlify 已不再包含该页。中文站仍保留在 /docs/core-concepts/rewardkit/motivation-and-design，请确认是否下线。"
+      },
+      {
+        "kind": "removed",
+        "slug": "core-concepts/tasks/windows-tasks",
+        "title": "core-concepts/tasks/windows-tasks",
+        "webPath": "/docs/core-concepts/tasks/windows-tasks",
+        "officialUrl": "https://docs.harborframework.com/core-concepts/tasks/windows-tasks",
+        "detail": "GitHub docs-mintlify 已不再包含该页。中文站仍保留在 /docs/core-concepts/tasks/windows-tasks，请确认是否下线。"
+      }
+    ]
+  },
+  {
     "id": "2026-10-09-c5bd89",
     "date": "2026-10-09",
     "title": "官网对照：61 处变动",
