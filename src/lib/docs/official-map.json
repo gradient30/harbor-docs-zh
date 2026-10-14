@@ -1,7 +1,7 @@
 {
-  "capturedAt": "2026-10-13",
+  "capturedAt": "2026-10-14",
   "officialRef": "main",
-  "docsTreeSha": "4778ceba98314a3b0fe119249f7ac84fc0af08b7",
+  "docsTreeSha": "2821487da7415a9bc328d8cc930e7b3181df4e61",
   "source": "https://api.github.com/repos/harbor-framework/harbor/git/trees/main?recursive=1",
   "docs": [
     {
@@ -1313,8 +1313,8 @@
       "section": "other",
       "kind": "official",
       "officialPath": "docs-mintlify/jobs/configs.mdx",
-      "size": 22706,
-      "lastSeenSha": "1549c716b98e648d8c1d23c2523fc6fd38b32f9d",
+      "size": 22558,
+      "lastSeenSha": "13dce2af63702b5255799526f416acb8c832e03c",
       "translatedAtSha": null,
       "contentSha": null,
       "webPath": "/docs/jobs/configs",
@@ -1739,6 +1739,18 @@
       "contentSha": null,
       "webPath": "/docs/jobs/model-lookup",
       "officialUrl": "https://docs.harborframework.com/jobs/model-lookup"
+    },
+    {
+      "slug": "jobs/error-classification",
+      "section": "other",
+      "kind": "official",
+      "officialPath": "docs-mintlify/jobs/error-classification.mdx",
+      "size": 3428,
+      "lastSeenSha": "5a032edfd7f14bb6fa106542bbe0c8b583e00978",
+      "translatedAtSha": null,
+      "contentSha": null,
+      "webPath": "/docs/jobs/error-classification",
+      "officialUrl": "https://docs.harborframework.com/jobs/error-classification"
     }
   ],
   "releases": []
