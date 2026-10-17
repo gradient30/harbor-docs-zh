@@ -1,7 +1,7 @@
 {
-  "capturedAt": "2026-10-16",
+  "capturedAt": "2026-10-17",
   "officialRef": "main",
-  "docsTreeSha": "2de4605b9404eada7d341388291e6e469c90330b",
+  "docsTreeSha": "36232c205abfa42a5df4eee664e36dab0908acb6",
   "source": "https://api.github.com/repos/harbor-framework/harbor/git/trees/main?recursive=1",
   "docs": [
     {
@@ -1697,8 +1697,8 @@
       "section": "other",
       "kind": "official",
       "officialPath": "docs-mintlify/tasks/solution.mdx",
-      "size": 1128,
-      "lastSeenSha": "2a5b2d426cd37db5736f448edb9bd63698563c5f",
+      "size": 2161,
+      "lastSeenSha": "14d579bf87c7212baf7e51920a01258f75782d73",
       "translatedAtSha": null,
       "contentSha": null,
       "webPath": "/docs/tasks/solution",
@@ -1763,6 +1763,18 @@
       "contentSha": null,
       "webPath": "/docs/agents/agent-auth-resolution",
       "officialUrl": "https://docs.harborframework.com/agents/agent-auth-resolution"
+    },
+    {
+      "slug": "tasks/lint",
+      "section": "other",
+      "kind": "official",
+      "officialPath": "docs-mintlify/tasks/lint.mdx",
+      "size": 2121,
+      "lastSeenSha": "d5ea35490c94338194d9508e2430c4ee928107fc",
+      "translatedAtSha": null,
+      "contentSha": null,
+      "webPath": "/docs/tasks/lint",
+      "officialUrl": "https://docs.harborframework.com/tasks/lint"
     }
   ],
   "releases": []
