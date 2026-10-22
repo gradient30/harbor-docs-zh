@@ -1,7 +1,7 @@
 {
-  "capturedAt": "2026-10-21",
+  "capturedAt": "2026-10-22",
   "officialRef": "main",
-  "docsTreeSha": "6c9d3d6609854375005a7b5c8f1906371d64c6ff",
+  "docsTreeSha": "209a48a7424218828465c3c716b042f2b381dbed",
   "source": "https://api.github.com/repos/harbor-framework/harbor/git/trees/main?recursive=1",
   "docs": [
     {
@@ -809,8 +809,8 @@
       "section": "tutorials",
       "kind": "official",
       "officialPath": "docs-mintlify/tutorials/create-a-verifier-with-rewardkit.mdx",
-      "size": 8711,
-      "lastSeenSha": "063ca791e07e03d4912badef2c816d56f86e4542",
+      "size": 8735,
+      "lastSeenSha": "71b475865b315d367a7224890bae85188c2877e7",
       "translatedAtSha": "8da52b14e1ea0927e3058309319ffd70365f1878",
       "contentSha": "24100050f6c695d8",
       "webPath": "/docs/tutorials/create-a-verifier-with-rewardkit",
@@ -1313,8 +1313,8 @@
       "section": "other",
       "kind": "official",
       "officialPath": "docs-mintlify/jobs/configs.mdx",
-      "size": 23096,
-      "lastSeenSha": "e5762762761552dcacae513e8c25cb690ff74798",
+      "size": 23330,
+      "lastSeenSha": "824c0b3f9a37abfd8ff87815e42c7e72d1ea95fd",
       "translatedAtSha": null,
       "contentSha": null,
       "webPath": "/docs/jobs/configs",
@@ -1517,8 +1517,8 @@
       "section": "other",
       "kind": "official",
       "officialPath": "docs-mintlify/rewardkit/quick-start.mdx",
-      "size": 15925,
-      "lastSeenSha": "f425020cd7cb464ed9f09ba28159b4ca16419b27",
+      "size": 15949,
+      "lastSeenSha": "60fe2b9bf3450be504b9cb9a3d9aa954177b25b5",
       "translatedAtSha": null,
       "contentSha": null,
       "webPath": "/docs/rewardkit/quick-start",
@@ -1775,6 +1775,18 @@
       "contentSha": null,
       "webPath": "/docs/tasks/lint",
       "officialUrl": "https://docs.harborframework.com/tasks/lint"
+    },
+    {
+      "slug": "agents/base-url-management",
+      "section": "other",
+      "kind": "official",
+      "officialPath": "docs-mintlify/agents/base-url-management.mdx",
+      "size": 1688,
+      "lastSeenSha": "722cf69aac667142aa580a3a72ef784f87726c2d",
+      "translatedAtSha": null,
+      "contentSha": null,
+      "webPath": "/docs/agents/base-url-management",
+      "officialUrl": "https://docs.harborframework.com/agents/base-url-management"
     }
   ],
   "releases": []
