@@ -1,7 +1,7 @@
 {
-  "capturedAt": "2026-10-22",
+  "capturedAt": "2026-10-23",
   "officialRef": "main",
-  "docsTreeSha": "209a48a7424218828465c3c716b042f2b381dbed",
+  "docsTreeSha": "bfc6c005e9a572ba22fd7e2d3b414bf014ae1ab0",
   "source": "https://api.github.com/repos/harbor-framework/harbor/git/trees/main?recursive=1",
   "docs": [
     {
@@ -1409,8 +1409,8 @@
       "section": "other",
       "kind": "official",
       "officialPath": "docs-mintlify/jobs/skills.mdx",
-      "size": 3640,
-      "lastSeenSha": "628fb030f440d96f6626d3ce161807231c6df843",
+      "size": 3641,
+      "lastSeenSha": "c9b82286de52508c9dda0ce0cbfde926b49df192",
       "translatedAtSha": null,
       "contentSha": null,
       "webPath": "/docs/jobs/skills",
@@ -1685,8 +1685,8 @@
       "section": "other",
       "kind": "official",
       "officialPath": "docs-mintlify/tasks/skills.mdx",
-      "size": 1973,
-      "lastSeenSha": "40c0dd47269b298a3a1f2146fca93d4c24273cc4",
+      "size": 1974,
+      "lastSeenSha": "939541695f851290b39b9703d0934464b5cb24a2",
       "translatedAtSha": null,
       "contentSha": null,
       "webPath": "/docs/tasks/skills",
