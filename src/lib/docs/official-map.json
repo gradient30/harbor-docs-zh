@@ -1,7 +1,7 @@
 {
-  "capturedAt": "2026-10-28",
+  "capturedAt": "2026-10-29",
   "officialRef": "main",
-  "docsTreeSha": "f3a5a923f6d722472c9e797af836ae4425fb215f",
+  "docsTreeSha": "509b119db0d97b141dcd9c80f4f7ab861c47c2d6",
   "source": "https://api.github.com/repos/harbor-framework/harbor/git/trees/main?recursive=1",
   "docs": [
     {
@@ -857,8 +857,8 @@
       "section": "news",
       "kind": "official",
       "officialPath": "docs-mintlify/news.mdx",
-      "size": 5498,
-      "lastSeenSha": "e32d9de461271016090a44c37f2e32dad234bf2b",
+      "size": 5718,
+      "lastSeenSha": "64ad1a3c39ed02cd6ee66c78be42aa92d20a26a3",
       "translatedAtSha": "7a0b9112eb962db48e713da5ff424eeaed557fb0",
       "contentSha": "0c13bc86d2f1b70c",
       "webPath": "/docs/news",
@@ -1037,8 +1037,8 @@
       "section": "other",
       "kind": "official",
       "officialPath": "docs-mintlify/agents/custom-agents.mdx",
-      "size": 7805,
-      "lastSeenSha": "7be68c6124e9c6d95db4d2b999b095f73f925e3b",
+      "size": 8174,
+      "lastSeenSha": "9272fdbb7842d0eea968e5295f2ed404a0375bfa",
       "translatedAtSha": null,
       "contentSha": null,
       "webPath": "/docs/agents/custom-agents",
@@ -1049,8 +1049,8 @@
       "section": "other",
       "kind": "official",
       "officialPath": "docs-mintlify/agents/pre-integrated-agents.mdx",
-      "size": 7972,
-      "lastSeenSha": "f83e366b09d3e7b20f365bf85c3f5fb7d84e7d6f",
+      "size": 7978,
+      "lastSeenSha": "4a792d1cf107a263a15fdfb44109732321b5b9e9",
       "translatedAtSha": null,
       "contentSha": null,
       "webPath": "/docs/agents/pre-integrated-agents",
@@ -1553,8 +1553,8 @@
       "section": "other",
       "kind": "official",
       "officialPath": "docs-mintlify/sandboxes/pre-integrated-sandboxes.mdx",
-      "size": 9418,
-      "lastSeenSha": "4041fe9a0ec0d4d4b2d3b4d28a299010fb500ccb",
+      "size": 9511,
+      "lastSeenSha": "c1bdc6baef78e0c571464cdcab980fcb2cb13211",
       "translatedAtSha": null,
       "contentSha": null,
       "webPath": "/docs/sandboxes/pre-integrated-sandboxes",
@@ -1787,6 +1787,18 @@
       "contentSha": null,
       "webPath": "/docs/agents/base-url-management",
       "officialUrl": "https://docs.harborframework.com/agents/base-url-management"
+    },
+    {
+      "slug": "news/reward-hacking",
+      "section": "news",
+      "kind": "official",
+      "officialPath": "docs-mintlify/news/reward-hacking.mdx",
+      "size": 15659,
+      "lastSeenSha": "9da19c2ffdb930f09785699c071072d145c51d36",
+      "translatedAtSha": null,
+      "contentSha": null,
+      "webPath": "/docs/news/reward-hacking",
+      "officialUrl": "https://docs.harborframework.com/news/reward-hacking"
     }
   ],
   "releases": []
