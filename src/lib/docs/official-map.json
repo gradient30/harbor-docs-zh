@@ -1,7 +1,7 @@
 {
-  "capturedAt": "2026-10-30",
+  "capturedAt": "2026-10-31",
   "officialRef": "main",
-  "docsTreeSha": "7d9a0b688898a11cd03cf14a21d51a9ab45d3b94",
+  "docsTreeSha": "5eb713ff9500daced4e143b98765a7c732744a1b",
   "source": "https://api.github.com/repos/harbor-framework/harbor/git/trees/main?recursive=1",
   "docs": [
     {
@@ -1049,8 +1049,8 @@
       "section": "other",
       "kind": "official",
       "officialPath": "docs-mintlify/agents/pre-integrated-agents.mdx",
-      "size": 7978,
-      "lastSeenSha": "4a792d1cf107a263a15fdfb44109732321b5b9e9",
+      "size": 7988,
+      "lastSeenSha": "f05c16531e48946222aa4410aa5020049a40a67a",
       "translatedAtSha": null,
       "contentSha": null,
       "webPath": "/docs/agents/pre-integrated-agents",
