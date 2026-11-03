@@ -1,7 +1,7 @@
 {
-  "capturedAt": "2026-11-02",
+  "capturedAt": "2026-11-03",
   "officialRef": "main",
-  "docsTreeSha": "00dc6a7003be8202e4e5ef6ac79c347c1b26033f",
+  "docsTreeSha": "f6cf2e2e86a102a9d2980ce8888f4bda251aa998",
   "source": "https://api.github.com/repos/harbor-framework/harbor/git/trees/main?recursive=1",
   "docs": [
     {
@@ -1217,8 +1217,8 @@
       "section": "other",
       "kind": "official",
       "officialPath": "docs-mintlify/hosted-harbor/cli.mdx",
-      "size": 15093,
-      "lastSeenSha": "11d277e144d4fbe4232c53285736f2575b330941",
+      "size": 16870,
+      "lastSeenSha": "d4c1a40c52582bdfb7230328abee2a435fb57f50",
       "translatedAtSha": null,
       "contentSha": null,
       "webPath": "/docs/hosted-harbor/cli",
