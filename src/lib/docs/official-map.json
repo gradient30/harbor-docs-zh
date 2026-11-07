@@ -1,7 +1,7 @@
 {
-  "capturedAt": "2026-11-06",
+  "capturedAt": "2026-11-07",
   "officialRef": "main",
-  "docsTreeSha": "7367e809aeed7cc01060e6d23245fb46c3310089",
+  "docsTreeSha": "2bc1a23bd961de0bec8742940f35ac9070c67815",
   "source": "https://api.github.com/repos/harbor-framework/harbor/git/trees/main?recursive=1",
   "docs": [
     {
@@ -1313,8 +1313,8 @@
       "section": "other",
       "kind": "official",
       "officialPath": "docs-mintlify/jobs/configs.mdx",
-      "size": 23344,
-      "lastSeenSha": "ff1e38ff32032e6304e0b1cbfd394d787983638b",
+      "size": 23653,
+      "lastSeenSha": "b40004b34dcd2f85608a685fe83ddc34c46c1a0e",
       "translatedAtSha": null,
       "contentSha": null,
       "webPath": "/docs/jobs/configs",
@@ -1745,8 +1745,8 @@
       "section": "other",
       "kind": "official",
       "officialPath": "docs-mintlify/jobs/error-classification.mdx",
-      "size": 3609,
-      "lastSeenSha": "2ffb75a6e9067a246a75c7f64d068f43f670a563",
+      "size": 4923,
+      "lastSeenSha": "13184fbc103464db77d00f62eca77d17a0c0dcf4",
       "translatedAtSha": null,
       "contentSha": null,
       "webPath": "/docs/jobs/error-classification",
