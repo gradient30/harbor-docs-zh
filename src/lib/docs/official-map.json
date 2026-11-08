@@ -1,7 +1,7 @@
 {
-  "capturedAt": "2026-11-07",
+  "capturedAt": "2026-11-08",
   "officialRef": "main",
-  "docsTreeSha": "2bc1a23bd961de0bec8742940f35ac9070c67815",
+  "docsTreeSha": "9c7a39b991d7e2205019f6be0598cbd22d84bfc3",
   "source": "https://api.github.com/repos/harbor-framework/harbor/git/trees/main?recursive=1",
   "docs": [
     {
