@@ -1,7 +1,7 @@
 {
-  "capturedAt": "2026-11-09",
+  "capturedAt": "2026-11-10",
   "officialRef": "main",
-  "docsTreeSha": "9c7a39b991d7e2205019f6be0598cbd22d84bfc3",
+  "docsTreeSha": "f5898150d65ff10e0beedf49bbfafbe78e52d231",
   "source": "https://api.github.com/repos/harbor-framework/harbor/git/trees/main?recursive=1",
   "docs": [
     {
@@ -857,8 +857,8 @@
       "section": "news",
       "kind": "official",
       "officialPath": "docs-mintlify/news.mdx",
-      "size": 5718,
-      "lastSeenSha": "64ad1a3c39ed02cd6ee66c78be42aa92d20a26a3",
+      "size": 6424,
+      "lastSeenSha": "d37104dba002cc27dcf7edce8ff8df65558de090",
       "translatedAtSha": "7a0b9112eb962db48e713da5ff424eeaed557fb0",
       "contentSha": "0c13bc86d2f1b70c",
       "webPath": "/docs/news",
@@ -1049,8 +1049,8 @@
       "section": "other",
       "kind": "official",
       "officialPath": "docs-mintlify/agents/pre-integrated-agents.mdx",
-      "size": 7988,
-      "lastSeenSha": "f05c16531e48946222aa4410aa5020049a40a67a",
+      "size": 8457,
+      "lastSeenSha": "72fee65c3fb0704ef85a9f771a02256e77561e92",
       "translatedAtSha": null,
       "contentSha": null,
       "webPath": "/docs/agents/pre-integrated-agents",
@@ -1799,6 +1799,18 @@
       "contentSha": null,
       "webPath": "/docs/news/reward-hacking",
       "officialUrl": "https://docs.harborframework.com/news/reward-hacking"
+    },
+    {
+      "slug": "harbor-serve/api-server",
+      "section": "other",
+      "kind": "official",
+      "officialPath": "docs-mintlify/harbor-serve/api-server.mdx",
+      "size": 11116,
+      "lastSeenSha": "8119263401511f169d4710f8c2553b453c69f781",
+      "translatedAtSha": null,
+      "contentSha": null,
+      "webPath": "/docs/harbor-serve/api-server",
+      "officialUrl": "https://docs.harborframework.com/harbor-serve/api-server"
     }
   ],
   "releases": []
