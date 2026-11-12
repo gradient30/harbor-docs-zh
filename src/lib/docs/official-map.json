@@ -1,7 +1,7 @@
 {
-  "capturedAt": "2026-11-11",
+  "capturedAt": "2026-11-12",
   "officialRef": "main",
-  "docsTreeSha": "500af91374dcc43b59fac54cf90295646617b14d",
+  "docsTreeSha": "feea734de84bf2479b329dc6315a6d98d1596f4f",
   "source": "https://api.github.com/repos/harbor-framework/harbor/git/trees/main?recursive=1",
   "docs": [
     {
@@ -1805,8 +1805,8 @@
       "section": "other",
       "kind": "official",
       "officialPath": "docs-mintlify/harbor-serve/api-server.mdx",
-      "size": 11116,
-      "lastSeenSha": "8119263401511f169d4710f8c2553b453c69f781",
+      "size": 12377,
+      "lastSeenSha": "4fb78766ea6a24916a974efb0c6b79729c5ef646",
       "translatedAtSha": null,
       "contentSha": null,
       "webPath": "/docs/harbor-serve/api-server",
