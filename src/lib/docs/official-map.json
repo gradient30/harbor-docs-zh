@@ -1,7 +1,7 @@
 {
-  "capturedAt": "2026-11-19",
+  "capturedAt": "2026-11-20",
   "officialRef": "main",
-  "docsTreeSha": "a215bfa03ccc026d22a0f11d5d6c51a8a46f0510",
+  "docsTreeSha": "646ab1b050269ec657f05e49d30fd73663a55b18",
   "source": "https://api.github.com/repos/harbor-framework/harbor/git/trees/main?recursive=1",
   "docs": [
     {
@@ -1241,8 +1241,8 @@
       "section": "other",
       "kind": "official",
       "officialPath": "docs-mintlify/hosted-harbor/index.mdx",
-      "size": 1251,
-      "lastSeenSha": "fea8434d1e7b2e63f0514338e703a4f1f7a07c7f",
+      "size": 1406,
+      "lastSeenSha": "5efd805ddee0d78677fe703e9ebbc344e0b8c3a7",
       "translatedAtSha": null,
       "contentSha": null,
       "webPath": "/docs/hosted-harbor/index",
@@ -1811,6 +1811,18 @@
       "contentSha": null,
       "webPath": "/docs/harbor-serve/api-server",
       "officialUrl": "https://docs.harborframework.com/harbor-serve/api-server"
+    },
+    {
+      "slug": "harbor-hub/mcp",
+      "section": "other",
+      "kind": "official",
+      "officialPath": "docs-mintlify/harbor-hub/mcp.mdx",
+      "size": 1062,
+      "lastSeenSha": "b516a318dfeaab5241d117a4d33d0d84c069e813",
+      "translatedAtSha": null,
+      "contentSha": null,
+      "webPath": "/docs/harbor-hub/mcp",
+      "officialUrl": "https://docs.harborframework.com/harbor-hub/mcp"
     }
   ],
   "releases": []
