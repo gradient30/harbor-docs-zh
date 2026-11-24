@@ -1,7 +1,7 @@
 {
-  "capturedAt": "2026-11-23",
+  "capturedAt": "2026-11-24",
   "officialRef": "main",
-  "docsTreeSha": "0658f230dfaf30844490c4f07054985fe0de1686",
+  "docsTreeSha": "6f5d3df26b2324d7ea5b09d4254cc7bc3c8b1fa6",
   "source": "https://api.github.com/repos/harbor-framework/harbor/git/trees/main?recursive=1",
   "docs": [
     {
@@ -1277,8 +1277,8 @@
       "section": "other",
       "kind": "official",
       "officialPath": "docs-mintlify/hosted-harbor/submitting-jobs.mdx",
-      "size": 12557,
-      "lastSeenSha": "f100fb083d8dead73ea14c1af31ab2d7aed431b3",
+      "size": 12259,
+      "lastSeenSha": "d3ae162b4545b9971c94643963cac8870b913e66",
       "translatedAtSha": null,
       "contentSha": null,
       "webPath": "/docs/hosted-harbor/submitting-jobs",
